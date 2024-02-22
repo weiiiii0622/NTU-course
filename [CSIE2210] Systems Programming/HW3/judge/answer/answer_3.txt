@@ -1,0 +1,13 @@
+0 1
+caught SIGALRM
+0 1
+caught SIGALRM
+0 2
+caught SIGALRM
+0 3
+caught SIGALRM
+0 5
+caught SIGALRM
+0 8
+caught SIGALRM
+0 13

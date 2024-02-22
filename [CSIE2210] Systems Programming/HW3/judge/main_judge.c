@@ -1,0 +1,101 @@
+#include "threadtools.h"
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <setjmp.h>
+#include <fcntl.h>
+#include <sys/signal.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/select.h>
+
+int timeslice;
+sigset_t base_mask, tstp_mask, alrm_mask;
+struct tcb *ready_queue[], *waiting_queue[];
+int rq_size, rq_current, wq_size;
+jmp_buf sched_buf;
+
+/* prototype of the thread functions */
+void fibonacci(int, int);
+void collatz(int, int);
+void max_subarray(int, int);
+
+/*
+ * This function turns stdin, stdout, and stderr into unbuffered I/O, so:
+ *   - you see everything your program prints in case it crashes
+ *   - the program behaves the same if its stdout doesn't connect to a terminal
+ */
+void unbuffered_io() {
+    setbuf(stdin, NULL);
+    setbuf(stdout, NULL);
+    setbuf(stderr, NULL);
+}
+
+/*
+ * Initializes the signal masks and the signal handler.
+ */
+void init_signal() {
+    /* initialize the signal masks */
+    sigemptyset(&base_mask);
+    sigaddset(&base_mask, SIGTSTP);
+    sigaddset(&base_mask, SIGALRM);
+    sigemptyset(&tstp_mask);
+    sigaddset(&tstp_mask, SIGTSTP);
+    sigemptyset(&alrm_mask);
+    sigaddset(&alrm_mask, SIGALRM);
+
+    /* initialize the signal handlers */
+    signal(SIGTSTP, sighandler);
+    signal(SIGALRM, sighandler);
+
+    /* block both SIGTSTP and SIGALRM */
+    sigprocmask(SIG_SETMASK, &base_mask, NULL);
+}
+
+/*
+ * Threads are created nowhere else but here.
+ */
+void init_threads(int fib_arg_1, int fib_arg_2, int col_arg_1, int col_arg_2, int sub_arg_1, int sub_arg_2, int sub_arg_3) {
+    if (fib_arg_1 >= 0)
+        thread_create(fibonacci, 0, fib_arg_1);
+    if (col_arg_1 >= 0)
+        thread_create(collatz, 1, col_arg_1);
+    if (sub_arg_1 >= 0)
+        thread_create(max_subarray, 2, sub_arg_1);
+    if (fib_arg_2 >= 0)
+        thread_create(fibonacci, 3, fib_arg_2);
+    if (col_arg_2 >= 0)
+        thread_create(collatz, 4, col_arg_2);
+    if (sub_arg_2 >= 0)
+        thread_create(max_subarray, 5, sub_arg_2);
+    if (sub_arg_3 >= 0)
+        thread_create(max_subarray, 6, sub_arg_3);
+}
+
+/* 
+ * Calls the scheduler to begin threading.
+ */
+void start_threading() {
+    alarm(timeslice);
+    scheduler();
+}
+
+int main(int argc, char *argv[]) {
+    if (argc != 9) {
+        printf("usage: %s [timeslice] [fib_arg] [col_arg] [sub_arg] [fib_arg] [col_arg] [sub_arg] [sub_arg]\n", argv[0]);
+        exit(1);
+    }
+    timeslice = atoi(argv[1]);
+    int fib_arg_1 = atoi(argv[2]);
+    int col_arg_1 = atoi(argv[3]);
+    int sub_arg_1 = atoi(argv[4]);
+    int fib_arg_2 = atoi(argv[5]);
+    int col_arg_2 = atoi(argv[6]);
+    int sub_arg_2 = atoi(argv[7]);
+    int sub_arg_3 = atoi(argv[8]);
+    unbuffered_io();
+    init_signal();
+    init_threads(fib_arg_1, fib_arg_2, col_arg_1, col_arg_2, sub_arg_1, sub_arg_2, sub_arg_3);
+    start_threading();
+}

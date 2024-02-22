@@ -1,0 +1,8 @@
+0 1
+caught SIGTSTP
+0 1
+0 2
+caught SIGALRM
+2 0
+0 3
+2 99
