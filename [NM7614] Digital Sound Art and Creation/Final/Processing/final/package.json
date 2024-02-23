@@ -1,0 +1,7 @@
+{
+    "name": "<your project name>",
+    "version": "<your project version>",
+    "dependencies": {
+        "osc": "2.4.1"
+    }
+}
