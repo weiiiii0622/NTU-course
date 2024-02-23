@@ -1,0 +1,698 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(27, 27, 27);
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 989px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .row-s-1 {height: 8.33%;}
+    .row-s-2 {height: 16.66%;}
+    .row-s-3 {height: 25%;}
+    .row-s-4 {height: 33.33%;}
+    .row-s-5 {height: 41.66%;}
+    .row-s-6 {height: 50%;}
+    .row-s-7 {height: 58.33%;}
+    .row-s-8 {height: 66.66%;}
+    .row-s-9 {height: 75%;}
+    .row-s-10 {height: 83.33%;}
+    .row-s-11 {height: 91.66%;}
+    .row-s-12 {height: 100%;}
+
+    .br {width: 100%; height: 0%}
+    .meeting_User-s{
+        background-color: rgba(105, 105, 105, 0.4);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        min-width: 150px;
+        width: 150px;
+        border:1px solid black;
+    }
+    .meeting_UserWrapper-s{
+
+        display: flex;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        overflow: scroll;
+        background-color: rgb(27, 27, 27);
+    }
+    .meeting_User-s:hover{
+        background-color: rgba(105, 105, 105, 0.5);
+    }
+
+    .meeting_User-s > .profile-sub > .setting-sub > .hide-sub{
+        display: none;
+    }
+
+    .footer_hide{
+        display: none;
+    }
+    
+  }
+  @media only screen and (min-width: 990px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .row-1 {height: 8.33%;}
+    .row-2 {height: 16.66%;}
+    .row-3 {height: 25%;}
+    .row-4 {height: 33.33%;}
+    .row-5 {height: 41.66%;}
+    .row-6 {height: 50%;}
+    .row-7 {height: 58.33%;}
+    .row-8 {height: 66.66%;}
+    .row-9 {height: 75%;}
+    .row-10 {height: 83.33%;}
+    .row-11 {height: 91.66%;}
+    .row-12 {height: 100%;}
+
+    .meeting_MainUser{
+        width: 100%;
+        height: 100%;
+    }
+
+    .meeting_MainWrapper{
+        margin: 0;
+
+        width: 68%;
+        height: 100%;
+
+        -webkit-transition: 200ms ease-in-out;
+        -moz-transition: 200ms ease-in-out;
+        -o-transition: 200ms ease-in-out;
+        -ms-transition: 200ms ease-in-out;
+        transition: 200ms ease-in-out;
+    }
+
+    .meeting_UserWrapper{
+        margin: 0 auto;
+        margin-top: 20vh;
+        padding-right: 1%;
+
+        width: 30%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 20%);
+        
+        gap: 1em;
+        
+
+        -webkit-transition: 200ms ease-in-out;
+        -moz-transition: 200ms ease-in-out;
+        -o-transition: 200ms ease-in-out;
+        -ms-transition: 200ms ease-in-out;
+        transition: 200ms ease-in-out;
+
+        /* background-color: white; */
+        background-color: rgb(27, 27, 27);
+    }
+    .meeting_SecondaryUser{
+        background-color: rgba(105, 105, 105, 0.4);
+        border: 1px solid black;
+        width: 60%;
+        height: 20%;
+        margin: auto;
+    }
+    .meeting_User{
+        background-color: rgba(105, 105, 105, 0.2);
+        border-radius: 10px;
+
+        -webkit-transition: 200ms ease;
+        -moz-transition: 200ms ease;
+        -o-transition: 200ms ease;
+        -ms-transition: 200ms ease;
+        transition: 200ms ease;
+    }
+
+    .meeting_User:hover, .meeting_SecondaryUser:hover{
+        background-color: rgba(105, 105, 105, 0.5);
+    }
+
+    .setting-sub{
+        position: absolute;
+        background-color: rgba(128, 128, 128, 0);
+        width: 105px;
+        height: 5%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    
+    .meeting_User-s:hover > .profile-sub > .setting-sub{
+        background-color: rgba(128, 128, 128, 0.3);
+    }
+    
+    .meeting_User-s:hover > .profile-sub > .setting-sub:hover{
+        background-color: rgba(128, 128, 128, 0.7);
+    }
+    
+    .meeting_User-s > .profile-sub > .setting-sub > .hide-sub{
+        display: none;
+    }
+    
+    .meeting_User-s:hover > .profile-sub > .setting-sub > .hide-sub{
+        display: flex;
+    }
+  }
+
+.meeting_main{
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.meeting_MainUser{
+    background-color: rgb(27, 27, 27);
+    overflow-x: hidden;
+}
+
+.meeting_MainUser:hover{
+    background-color: rgba(105, 105, 105, 0.5);
+}
+
+.mute{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mute-sub{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.profile{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-sub{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-sub{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.setting{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0);
+    width: 120px;
+    height: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.meeting_MainUser:hover > .profile > .setting{
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.meeting_MainUser:hover > .profile > .setting:hover{
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.meeting_MainUser > .profile > .setting > .hide{
+    display: none;
+}
+
+.meeting_MainUser:hover > .profile > .setting > .hide{
+    display: flex;
+}
+
+#pin_main{
+    content: url("media/unpin_hovered.png");
+}
+
+#pin_main:checked{
+    content: url("media/pin.png");
+    height: 50%;
+}
+
+#block_main{
+    content: url("media/block.png");
+    height: 52%;
+}
+
+#block_main:checked{
+    content: url("media/block2.png");
+    height: 50%;
+}
+
+#zoom_main{
+    content: url("media/zoom_out.png");
+}
+
+#zoom_main:checked{
+    content: url("media/zoom_in.png");
+}
+
+#pin{
+    content: url("media/pin.png");
+}
+
+#pin:checked{
+    content: url("media/unpin_hovered.png");
+    height: 50%;
+}
+
+#block{
+    content: url("media/block.png");
+    height: 52%;
+}
+
+#block:checked{
+    content: url("media/block2.png");
+    height: 50%;
+}
+
+#zoom{
+    content: url("media/zoom_in.png");
+}
+
+#zoom:checked{
+    content: url("media/zoom_out.png");
+}
+
+
+.meeting_footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(27, 27, 27);
+}
+
+
+/* footer */
+.footer_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_util{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -webkit-flex-direction: row;
+    
+}
+
+.footer_setting{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_wrap{
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.hint_hide{
+    display: none;
+    
+}
+
+.hint:hover + span{
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 60px;
+    margin-bottom: 150%;
+    margin-left: -10%;
+    font-size: xx-small;
+    background-color: rgb(255, 246, 235);
+    opacity: 0.5;
+    transition: 0.5s all ease;
+    transition-delay: 0.5s;
+    border-radius: 5px;
+}
+.hint-set:hover + span{
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 60px;
+    margin-bottom: 200%;
+    margin-left: -50%;
+    font-size: xx-small;
+    background-color: rgb(255, 246, 235);
+    opacity: 0.5;
+    transition: 0.5s all ease;
+    transition-delay: 0.5s;
+    border-radius: 5px;
+}
+
+.trans{
+    transition: all 1s ease;
+}
+
+#mute{
+    content: url("media/mute_on.png");
+    display: none;
+}
+
+#mute + label{
+    width: 6vh;
+    height: 6vh;
+    background-image: url("media/mute_on.png");
+    transition: all .75s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+#mute:checked + label{
+    background-image: url("media/mute_off.png");
+}
+
+#mute + span{
+    display: none;
+}
+
+#camera{
+    content: url("media/camera_off.png");
+    display: none;
+}
+
+#camera + label{
+    width: 6vh;
+    height: 6vh;
+    background-image: url("media/camera_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+#camera:checked + label{
+    background-image: url("media/camera_on.png");
+}
+
+#hand{
+    content: url("media/hand_off.png");
+    display: none;
+}
+
+#hand + label{
+    width: 6vh;
+    height: 6vh;
+    background-image: url("media/hand_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+#hand:checked + label{
+    background-image: url("media/hand_on.png");
+}
+
+#share-screen{
+    content: url("media/share_screen_off.png");
+    display: none;
+}
+
+#share-screen + label{
+    width: 6vh;
+    height: 6vh;
+    background-image: url("media/share_screen_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#share-screen:checked + label{
+    background-image: url("media/share_screen_on.png");
+}
+
+#option{
+    content: url("media/option_off.png");
+    display: none;
+}
+
+#option + label{
+    width: 6vh;
+    height: 6vh;
+    background-image: url("media/option_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#option:checked + label{
+    background-image: url("media/option_on.png");
+}
+
+#hangup{
+    content: url("media/hangup_off.png");
+    display: none;
+}
+
+#hangup + label{
+    width: 8vh;
+    height: 6vh;
+    background-image: url("media/hangup_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#hangup:checked + label{
+    background-image: url("media/hangup_on.png");
+}
+
+#add{
+    content: url("media/plus.png");
+    display: none;
+}
+
+#add + label{
+    width: 4vh;
+    height: 4vh;
+    background-image: url("media/plus.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#add:checked + label{
+    background-image: url("media/plus.png");
+}
+
+#info{
+    content: url("media/info_off.png");
+    display: none;
+}
+
+#info + label{
+    width: 4vh;
+    height: 4vh;
+    background-image: url("media/info_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#info:checked + label{
+    background-image: url("media/info_on.png");
+}
+
+#count{
+    content: url("media/count_off.png");
+    display: none;
+}
+
+#count + label{
+    width: 4.5vh;
+    height: 5vh;
+    background-image: url("media/count_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#count:checked + label{
+    background-image: url("media/count_on.png");
+}
+
+#message{
+    content: url("media/message_off.png");
+    display: none;
+}
+
+#message + label{
+    width: 3vh;
+    height: 3vh;
+    background-image: url("media/message_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#message:checked + label{
+    background-image: url("media/message_on.png");
+}
+
+#activity{
+    content: url("media/activity_off.png");
+    display: none;
+}
+
+#activity + label{
+    width: 3vh;
+    height: 3vh;
+    background-image: url("media/activity_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#activity:checked + label{
+    background-image: url("media/activity_on.png");
+}
+
+#control{
+    content: url("media/control_off.png");
+    display: none;
+}
+
+#control + label{
+    width: 3vh;
+    height: 3vh;
+    background-image: url("media/control_off.png");
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#control:checked + label{
+    background-image: url("media/control_on.png");
+}
+
+/* add form */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 13%;
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[name=profile_img] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}

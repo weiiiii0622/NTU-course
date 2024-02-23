@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Google Meet</title>
+</head>
+<body>
+    <div id="main_wrapper" class="meeting_main">
+        <div class="meeting_MainWrapper" id="mainuser_wrapper">
+            <div class="meeting_MainUser" id="Peanut" profile_img="Peanut">
+                <div class="mute">
+                    <img src="media/muted.png" id="main_mute" style="margin: 10px; height:50%;">
+                </div>
+                <div class="profile">
+                    <div class="setting">
+                        <input type="checkbox" id="pin_main" class="hide" style="height: 70%; appearance: none;" onclick="unpin(this, 0)">
+                        <input type="checkbox" id="block_main" class="hide" style="appearance: none;">
+                        <input type="checkbox" id="zoom_main" class="hide" style="height: 60%; appearance: none;">
+                    </div>
+                    <img src="media/Peanut.png" style="height:30%; border-radius: 50%;">
+                </div>
+                <div class="info">
+                    <img src="media/pin.png" style="height:50%; border-radius: 50%; margin-left: 3%;">
+                    &ThickSpace;&ThickSpace;<h4 style="color: white;">你</h4>
+                </div>
+            </div>
+        </div>
+        <div id="user_wrapper" class="meeting_UserWrapper-s meeting_UserWrapper">
+            <div class="meeting_User-s meeting_User" id="Dave" profile_img="Dave">
+                <div class="mute-sub">
+                    <img src="media/close.png" onclick="delUser(this)" style="margin: 7px; height:100%; cursor: pointer;">
+                    <img src="media/muted.png" style="margin: 7px; height:100%;">
+                </div>
+                <div class="profile-sub">
+                    <div class="setting-sub">
+                        <input type="checkbox" id="pin" class="hide-sub" style="height: 70%; appearance: none;" onclick="pin(this)">
+                        <input type="checkbox" id="block" class="hide-sub" style="appearance: none;">
+                        <input type="checkbox" id="zoom" class="hide-sub" style="height: 60%; appearance: none;">
+                    </div>
+                    <img src="media/Dave.png" style="height:100%; border-radius: 50%; margin-top: -5%;">
+                </div>
+                <div class="info-sub">
+                    &ThickSpace;&ThickSpace;&ThickSpace;<h5 style="color: white;">Dave</h5>
+                </div>
+            </div>
+            <div class="meeting_User-s meeting_User" id="Kevin" profile_img="Kevin">
+                <div class="mute-sub">
+                    <img src="media/close.png" onclick="delUser(this)" style="margin: 7px; height:100%; cursor: pointer;">
+                    <img src="media/muted.png" style="margin: 7px; height:100%;">
+                </div>
+                <div class="profile-sub">
+                    <div class="setting-sub">
+                        <input type="checkbox" id="pin" class="hide-sub" style="height: 70%; appearance: none;" onclick="pin(this)">
+                        <input type="checkbox" id="block" class="hide-sub" style="appearance: none;">
+                        <input type="checkbox" id="zoom" class="hide-sub" style="height: 60%; appearance: none;">
+                    </div>
+                    <img src="media/Kevin.png" style="height:100%; border-radius: 50%; margin-top: -5%;">
+                </div>
+                <div class="info-sub">
+                    &ThickSpace;&ThickSpace;&ThickSpace;<h5 style="color: white;">Kevin</h5>
+                </div>
+            </div>
+            <div class="meeting_User-s meeting_User" id="Bob" profile_img="Bob">
+                <div class="mute-sub">
+                    <img src="media/close.png" onclick="delUser(this)" style="margin: 7px; height:100%; cursor: pointer;">
+                    <img src="media/muted.png" style="margin: 7px; height:100%;">
+                </div>
+                <div class="profile-sub">
+                    <div class="setting-sub">
+                        <input type="checkbox" id="pin" class="hide-sub" style="height: 70%; appearance: none;" onclick="pin(this)">
+                        <input type="checkbox" id="block" class="hide-sub" style="appearance: none;">
+                        <input type="checkbox" id="zoom" class="hide-sub" style="height: 60%; appearance: none;">
+                    </div>
+                    <img src="media/Bob.png" style="height:100%; border-radius: 50%; margin-top: -5%;">
+                </div>
+                <div class="info-sub">
+                    &ThickSpace;&ThickSpace;&ThickSpace;<h5 style="color: white;">Bob</h5>
+                </div>
+            </div>
+            <div class="meeting_User-s meeting_User" id="Phil" profile_img="Phil">
+                <div class="mute-sub">
+                    <img src="media/close.png" onclick="delUser(this)" style="margin: 7px; height:100%; cursor: pointer;">
+                    <img src="media/muted.png" style="margin: 7px; height:100%;">
+                </div>
+                <div class="profile-sub">
+                    <div class="setting-sub">
+                        <input type="checkbox" id="pin" class="hide-sub" style="height: 70%; appearance: none;" onclick="pin(this)">
+                        <input type="checkbox" id="block" class="hide-sub" style="appearance: none;">
+                        <input type="checkbox" id="zoom" class="hide-sub" style="height: 60%; appearance: none;">
+                    </div>
+                    <img src="media/Phil.png" style="height:100%; border-radius: 50%; margin-top: -5%;">
+                </div>
+                <div class="info-sub">
+                    &ThickSpace;&ThickSpace;&ThickSpace;<h5 style="color: white;">Phil</h5>
+                </div>
+            </div>
+            <div class="meeting_User-s meeting_User" id="Carl" profile_img="Carl">
+                <div class="mute-sub">
+                    <img src="media/close.png" onclick="delUser(this)" style="margin: 7px; height:100%; cursor: pointer;">
+                    <img src="media/muted.png" style="margin: 7px; height:100%;">
+                </div>
+                <div class="profile-sub">
+                    <div class="setting-sub">
+                        <input type="checkbox" id="pin" class="hide-sub" style="height: 70%; appearance: none;" onclick="pin(this)">
+                        <input type="checkbox" id="block" class="hide-sub" style="appearance: none;">
+                        <input type="checkbox" id="zoom" class="hide-sub" style="height: 60%; appearance: none;">
+                    </div>
+                    <img src="media/Carl.png" style="height:100%; border-radius: 50%; margin-top: -5%;">
+                </div>
+                <div class="info-sub">
+                    &ThickSpace;&ThickSpace;&ThickSpace;<h5 style="color: white;">Carl</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="meeting_footer">
+            <div class="footer_info col-4">
+                <h3 id="time" class="footer_hide" style="color: white;"></h3>
+            </div>
+            <div class="footer_util col-6 col-s-12">
+                <div class="footer_wrap">
+                    
+                    <input type="checkbox" id="mute" style="height: 60%;">
+                    <label class="hint" for="mute"></label>
+                    <span class="hint_hide">控制靜音</span>
+                    <script>
+                        var c = document.getElementById("mute");
+                        c.onclick = function(){
+                            var m = document.getElementById("Peanut").children[0].children[1];
+                            if(c.checked){
+                                m.style.visibility = 'hidden';
+                            }
+                            else{
+                                m.style.visibility = 'visible';
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="footer_wrap">
+                    <input type="checkbox" id="camera" style="height: 60%;">
+                    <label class="hint" for="camera"></label>
+                    <span class="hint_hide">控制視訊</span>
+                </div>
+                <div class="footer_wrap">
+                    <input type="checkbox" id="hand" style="height: 60%;">
+                    <label class="hint" for="hand"></label>
+                    <span class="hint_hide">舉手</span>
+                </div>
+                <div class="footer_wrap">
+                    <input type="checkbox" id="share-screen" style="height: 60%;">
+                    <label class="hint" for="share-screen"></label>
+                    <span class="hint_hide">分享螢幕</span>
+                </div>
+                <div class="footer_wrap">
+                    <input type="checkbox" id="option" style="height: 60%;">
+                    <label class="hint" for="option"></label>
+                    <span class="hint_hide">更多選項</span>
+                </div>
+                <div class="footer_wrap">
+                    <input type="checkbox" id="hangup" style="height: 60%;">
+                    <label class="hint" for="hangup"></label>
+                    <span class="hint_hide" style="margin-left: 0%;">退出通話</span>
+                </div>
+                
+
+                
+                
+            </div>
+            <div class="footer_setting col-4">
+                <div class=" footer_wrap" style="margin-right: 7%;">
+                    <input type="checkbox" id="add" style="height: 60%;" onclick="openForm()">
+                    <label class="footer_hide hint-set" for="add"></label>
+                    <span class="hint_hide">增加人數</span>
+                </div>
+                <div class="form-popup" id="AddUserFormDiv">
+                    <form action="" class="form-container" id="AddUserForm">
+                      <h1 style="margin-top: 0%;">Add User</h1>
+                  
+                      <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Enter Name" name="name" required>
+                  
+                      <label for="profile_img"><b>Profile Picture</b></label>
+                      <input list="profile_img" placeholder="Choose a Profile Picture" name="profile_img" required>
+                      <datalist id="profile_img">
+                        <option value="Peanut"></option>
+                        <option value="Carl"></option>
+                        <option value="Phil"></option>
+                        <option value="Bob"></option>
+                        <option value="Kevin"></option>
+                        <option value="Dave"></option>
+                      </datalist>
+                  
+                      <button type="button" class="btn" onclick="submitForm()">Add</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+                <div class=" footer_wrap" style="margin-right: 7%;">
+                    <input type="checkbox" id="info" style="height: 60%;">
+                    <label class="footer_hide hint-set" for="info"></label>
+                    <span class="hint_hide">詳細資料</span>
+                </div>
+                <div class="footer_wrap" style="margin-right: 7%; margin-bottom: 3%;">
+                    <input type="checkbox" id="count" style="height: 60%;">
+                    <label class="footer_hide hint-set" for="count"></label>
+                    <span class="hint_hide">會議人數</span>
+                </div>
+                <div class="footer_wrap" style="margin-right: 7%;">
+                    <input type="checkbox" id="message" style="height: 60%;">
+                    <label class="footer_hide hint-set" for="message"></label>
+                    <span class="hint_hide">即時通訊</span>
+                </div>
+                <div class="footer_wrap" style="margin-right: 7%;">
+                    <input type="checkbox" id="activity" style="height: 60%;">
+                    <label class="footer_hide hint-set" for="activity"></label>
+                    <span class="hint_hide">活動</span>
+                </div>
+                <div class="footer_wrap" style="margin-right: 7%;">
+                    <input type="checkbox" id="control" style="height: 60%;">
+                    <label class="footer_hide hint-set" for="control"></label>
+                    <span class="hint_hide">控制選項</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
