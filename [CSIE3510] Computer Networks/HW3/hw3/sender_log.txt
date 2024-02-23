@@ -1,0 +1,2267 @@
+send	data	#1,	winSize = 1
+recv	ack	#1,	sack	#1
+send	data	#2,	winSize = 2
+send	data	#3,	winSize = 2
+recv	ack	#1,	sack	#1
+recv	ack	#1,	sack	#3
+send	data	#4,	winSize = 2
+recv	ack	#1,	sack	#4
+send	data	#5,	winSize = 2
+resnd	data	#2,	winSize = 2
+recv	ack	#1,	sack	#5
+send	data	#6,	winSize = 2
+recv	ack	#5,	sack	#2
+send	data	#7,	winSize = 3
+send	data	#8,	winSize = 3
+recv	ack	#5,	sack	#5
+recv	ack	#5,	sack	#7
+send	data	#9,	winSize = 3
+recv	ack	#5,	sack	#8
+send	data	#10,	winSize = 3
+resnd	data	#6,	winSize = 3
+recv	ack	#5,	sack	#5
+recv	ack	#8,	sack	#6
+send	data	#11,	winSize = 4
+send	data	#12,	winSize = 4
+recv	ack	#8,	sack	#12
+send	data	#13,	winSize = 4
+recv	ack	#8,	sack	#13
+send	data	#14,	winSize = 4
+recv	ack	#8,	sack	#14
+send	data	#15,	winSize = 4
+resnd	data	#9,	winSize = 4
+recv	ack	#8,	sack	#15
+send	data	#16,	winSize = 4
+recv	ack	#9,	sack	#9
+send	data	#17,	winSize = 5
+send	data	#18,	winSize = 5
+recv	ack	#9,	sack	#16
+send	data	#19,	winSize = 5
+recv	ack	#9,	sack	#17
+send	data	#20,	winSize = 5
+recv	ack	#9,	sack	#18
+send	data	#21,	winSize = 5
+resnd	data	#10,	winSize = 5
+recv	ack	#9,	sack	#19
+send	data	#22,	winSize = 5
+recv	ack	#9,	sack	#20
+send	data	#23,	winSize = 5
+recv	ack	#9,	sack	#21
+send	data	#24,	winSize = 5
+recv	ack	#10,	sack	#10
+send	data	#25,	winSize = 6
+send	data	#26,	winSize = 6
+recv	ack	#10,	sack	#22
+send	data	#27,	winSize = 6
+recv	ack	#10,	sack	#23
+send	data	#28,	winSize = 6
+recv	ack	#10,	sack	#24
+send	data	#29,	winSize = 6
+resnd	data	#11,	winSize = 6
+recv	ack	#10,	sack	#25
+send	data	#30,	winSize = 6
+recv	ack	#10,	sack	#26
+send	data	#31,	winSize = 6
+recv	ack	#10,	sack	#27
+send	data	#32,	winSize = 6
+recv	ack	#10,	sack	#28
+send	data	#33,	winSize = 6
+recv	ack	#10,	sack	#29
+send	data	#34,	winSize = 6
+recv	ack	#29,	sack	#11
+send	data	#35,	winSize = 7
+send	data	#36,	winSize = 7
+recv	ack	#30,	sack	#30
+send	data	#37,	winSize = 8
+send	data	#38,	winSize = 8
+recv	ack	#31,	sack	#31
+send	data	#39,	winSize = 9
+send	data	#40,	winSize = 9
+recv	ack	#32,	sack	#32
+send	data	#41,	winSize = 10
+send	data	#42,	winSize = 10
+recv	ack	#33,	sack	#33
+send	data	#43,	winSize = 11
+send	data	#44,	winSize = 11
+recv	ack	#34,	sack	#34
+send	data	#45,	winSize = 12
+send	data	#46,	winSize = 12
+recv	ack	#35,	sack	#35
+send	data	#47,	winSize = 13
+send	data	#48,	winSize = 13
+recv	ack	#36,	sack	#36
+send	data	#49,	winSize = 14
+send	data	#50,	winSize = 14
+recv	ack	#37,	sack	#37
+send	data	#51,	winSize = 15
+send	data	#52,	winSize = 15
+recv	ack	#38,	sack	#38
+send	data	#53,	winSize = 16
+send	data	#54,	winSize = 16
+recv	ack	#39,	sack	#39
+send	data	#55,	winSize = 16
+recv	ack	#40,	sack	#40
+send	data	#56,	winSize = 16
+recv	ack	#41,	sack	#41
+send	data	#57,	winSize = 16
+recv	ack	#42,	sack	#42
+send	data	#58,	winSize = 16
+recv	ack	#43,	sack	#43
+send	data	#59,	winSize = 16
+recv	ack	#44,	sack	#44
+send	data	#60,	winSize = 16
+recv	ack	#45,	sack	#45
+send	data	#61,	winSize = 16
+recv	ack	#46,	sack	#46
+send	data	#62,	winSize = 16
+recv	ack	#47,	sack	#47
+send	data	#63,	winSize = 16
+recv	ack	#48,	sack	#48
+send	data	#64,	winSize = 16
+recv	ack	#49,	sack	#49
+send	data	#65,	winSize = 16
+recv	ack	#50,	sack	#50
+send	data	#66,	winSize = 16
+recv	ack	#51,	sack	#51
+send	data	#67,	winSize = 16
+recv	ack	#51,	sack	#53
+send	data	#68,	winSize = 16
+recv	ack	#51,	sack	#51
+recv	ack	#51,	sack	#51
+resnd	data	#52,	winSize = 16
+recv	ack	#51,	sack	#56
+send	data	#69,	winSize = 16
+recv	ack	#51,	sack	#57
+send	data	#70,	winSize = 16
+recv	ack	#51,	sack	#58
+send	data	#71,	winSize = 16
+recv	ack	#51,	sack	#59
+send	data	#72,	winSize = 16
+recv	ack	#51,	sack	#60
+send	data	#73,	winSize = 16
+recv	ack	#51,	sack	#62
+send	data	#74,	winSize = 16
+recv	ack	#51,	sack	#63
+send	data	#75,	winSize = 16
+recv	ack	#51,	sack	#51
+recv	ack	#51,	sack	#65
+send	data	#76,	winSize = 16
+recv	ack	#51,	sack	#66
+send	data	#77,	winSize = 16
+recv	ack	#51,	sack	#67
+send	data	#78,	winSize = 16
+recv	ack	#51,	sack	#68
+send	data	#79,	winSize = 16
+recv	ack	#53,	sack	#52
+send	data	#80,	winSize = 16
+recv	ack	#53,	sack	#69
+send	data	#81,	winSize = 16
+recv	ack	#53,	sack	#70
+send	data	#82,	winSize = 16
+recv	ack	#53,	sack	#71
+send	data	#83,	winSize = 16
+resnd	data	#54,	winSize = 16
+recv	ack	#53,	sack	#72
+send	data	#84,	winSize = 16
+recv	ack	#53,	sack	#73
+send	data	#85,	winSize = 16
+recv	ack	#53,	sack	#74
+send	data	#86,	winSize = 16
+recv	ack	#53,	sack	#75
+send	data	#87,	winSize = 16
+recv	ack	#53,	sack	#76
+send	data	#88,	winSize = 16
+recv	ack	#53,	sack	#77
+send	data	#89,	winSize = 16
+recv	ack	#53,	sack	#78
+send	data	#90,	winSize = 16
+recv	ack	#53,	sack	#79
+send	data	#91,	winSize = 16
+recv	ack	#53,	sack	#81
+send	data	#92,	winSize = 16
+recv	ack	#53,	sack	#82
+send	data	#93,	winSize = 16
+recv	ack	#53,	sack	#83
+send	data	#94,	winSize = 16
+recv	ack	#53,	sack	#84
+send	data	#95,	winSize = 16
+recv	ack	#53,	sack	#53
+recv	ack	#53,	sack	#86
+send	data	#96,	winSize = 16
+recv	ack	#53,	sack	#88
+send	data	#97,	winSize = 16
+recv	ack	#53,	sack	#53
+recv	ack	#53,	sack	#92
+send	data	#98,	winSize = 16
+recv	ack	#53,	sack	#93
+send	data	#99,	winSize = 16
+recv	ack	#53,	sack	#94
+send	data	#100,	winSize = 16
+recv	ack	#53,	sack	#95
+send	data	#101,	winSize = 16
+recv	ack	#53,	sack	#96
+send	data	#102,	winSize = 16
+recv	ack	#53,	sack	#97
+send	data	#103,	winSize = 16
+recv	ack	#53,	sack	#98
+send	data	#104,	winSize = 16
+recv	ack	#53,	sack	#99
+send	data	#105,	winSize = 16
+recv	ack	#53,	sack	#100
+send	data	#106,	winSize = 16
+recv	ack	#53,	sack	#101
+send	data	#107,	winSize = 16
+recv	ack	#53,	sack	#102
+send	data	#108,	winSize = 16
+recv	ack	#53,	sack	#103
+send	data	#109,	winSize = 16
+recv	ack	#53,	sack	#53
+recv	ack	#53,	sack	#105
+send	data	#110,	winSize = 16
+recv	ack	#53,	sack	#106
+send	data	#111,	winSize = 16
+recv	ack	#53,	sack	#107
+send	data	#112,	winSize = 16
+recv	ack	#53,	sack	#108
+send	data	#113,	winSize = 16
+recv	ack	#53,	sack	#109
+send	data	#114,	winSize = 16
+recv	ack	#53,	sack	#110
+send	data	#115,	winSize = 16
+recv	ack	#53,	sack	#111
+send	data	#116,	winSize = 16
+recv	ack	#53,	sack	#112
+send	data	#117,	winSize = 16
+recv	ack	#53,	sack	#113
+send	data	#118,	winSize = 16
+recv	ack	#53,	sack	#114
+send	data	#119,	winSize = 16
+recv	ack	#53,	sack	#115
+send	data	#120,	winSize = 16
+recv	ack	#53,	sack	#116
+send	data	#121,	winSize = 16
+recv	ack	#53,	sack	#117
+send	data	#122,	winSize = 16
+recv	ack	#53,	sack	#118
+send	data	#123,	winSize = 16
+recv	ack	#53,	sack	#119
+send	data	#124,	winSize = 16
+recv	ack	#53,	sack	#120
+send	data	#125,	winSize = 16
+recv	ack	#53,	sack	#122
+send	data	#126,	winSize = 16
+recv	ack	#53,	sack	#123
+send	data	#127,	winSize = 16
+recv	ack	#53,	sack	#124
+send	data	#128,	winSize = 16
+recv	ack	#53,	sack	#125
+send	data	#129,	winSize = 16
+recv	ack	#53,	sack	#126
+send	data	#130,	winSize = 16
+recv	ack	#53,	sack	#127
+send	data	#131,	winSize = 16
+recv	ack	#53,	sack	#129
+send	data	#132,	winSize = 16
+recv	ack	#53,	sack	#130
+send	data	#133,	winSize = 16
+recv	ack	#53,	sack	#131
+send	data	#134,	winSize = 16
+recv	ack	#53,	sack	#132
+send	data	#135,	winSize = 16
+recv	ack	#53,	sack	#133
+send	data	#136,	winSize = 16
+recv	ack	#53,	sack	#134
+send	data	#137,	winSize = 16
+recv	ack	#53,	sack	#135
+send	data	#138,	winSize = 16
+recv	ack	#53,	sack	#136
+send	data	#139,	winSize = 16
+recv	ack	#53,	sack	#137
+send	data	#140,	winSize = 16
+recv	ack	#53,	sack	#138
+send	data	#141,	winSize = 16
+recv	ack	#53,	sack	#139
+send	data	#142,	winSize = 16
+recv	ack	#53,	sack	#140
+send	data	#143,	winSize = 16
+recv	ack	#53,	sack	#141
+send	data	#144,	winSize = 16
+recv	ack	#53,	sack	#142
+send	data	#145,	winSize = 16
+recv	ack	#53,	sack	#143
+send	data	#146,	winSize = 16
+recv	ack	#53,	sack	#145
+send	data	#147,	winSize = 16
+recv	ack	#53,	sack	#146
+send	data	#148,	winSize = 16
+recv	ack	#53,	sack	#147
+send	data	#149,	winSize = 16
+recv	ack	#53,	sack	#148
+send	data	#150,	winSize = 16
+recv	ack	#53,	sack	#149
+send	data	#151,	winSize = 16
+recv	ack	#53,	sack	#150
+send	data	#152,	winSize = 16
+recv	ack	#53,	sack	#151
+send	data	#153,	winSize = 16
+recv	ack	#53,	sack	#152
+send	data	#154,	winSize = 16
+recv	ack	#53,	sack	#153
+send	data	#155,	winSize = 16
+recv	ack	#53,	sack	#154
+send	data	#156,	winSize = 16
+recv	ack	#53,	sack	#155
+send	data	#157,	winSize = 16
+recv	ack	#53,	sack	#156
+send	data	#158,	winSize = 16
+recv	ack	#53,	sack	#157
+send	data	#159,	winSize = 16
+recv	ack	#53,	sack	#158
+send	data	#160,	winSize = 16
+recv	ack	#53,	sack	#159
+send	data	#161,	winSize = 16
+recv	ack	#53,	sack	#160
+send	data	#162,	winSize = 16
+recv	ack	#53,	sack	#161
+send	data	#163,	winSize = 16
+recv	ack	#53,	sack	#162
+send	data	#164,	winSize = 16
+recv	ack	#53,	sack	#163
+send	data	#165,	winSize = 16
+recv	ack	#53,	sack	#164
+send	data	#166,	winSize = 16
+recv	ack	#53,	sack	#165
+send	data	#167,	winSize = 16
+recv	ack	#53,	sack	#166
+send	data	#168,	winSize = 16
+recv	ack	#53,	sack	#167
+send	data	#169,	winSize = 16
+recv	ack	#53,	sack	#168
+send	data	#170,	winSize = 16
+recv	ack	#53,	sack	#169
+send	data	#171,	winSize = 16
+recv	ack	#53,	sack	#170
+send	data	#172,	winSize = 16
+recv	ack	#53,	sack	#171
+send	data	#173,	winSize = 16
+recv	ack	#53,	sack	#172
+send	data	#174,	winSize = 16
+recv	ack	#53,	sack	#173
+send	data	#175,	winSize = 16
+recv	ack	#53,	sack	#174
+send	data	#176,	winSize = 16
+recv	ack	#53,	sack	#175
+send	data	#177,	winSize = 16
+recv	ack	#53,	sack	#176
+send	data	#178,	winSize = 16
+recv	ack	#53,	sack	#177
+send	data	#179,	winSize = 16
+recv	ack	#53,	sack	#178
+send	data	#180,	winSize = 16
+recv	ack	#53,	sack	#179
+send	data	#181,	winSize = 16
+recv	ack	#53,	sack	#180
+send	data	#182,	winSize = 16
+recv	ack	#53,	sack	#181
+send	data	#183,	winSize = 16
+recv	ack	#53,	sack	#182
+send	data	#184,	winSize = 16
+recv	ack	#53,	sack	#183
+send	data	#185,	winSize = 16
+recv	ack	#53,	sack	#53
+recv	ack	#53,	sack	#185
+send	data	#186,	winSize = 16
+recv	ack	#53,	sack	#186
+send	data	#187,	winSize = 16
+recv	ack	#53,	sack	#187
+send	data	#188,	winSize = 16
+recv	ack	#53,	sack	#188
+send	data	#189,	winSize = 16
+recv	ack	#53,	sack	#189
+send	data	#190,	winSize = 16
+recv	ack	#53,	sack	#190
+send	data	#191,	winSize = 16
+recv	ack	#53,	sack	#191
+send	data	#192,	winSize = 16
+recv	ack	#53,	sack	#192
+send	data	#193,	winSize = 16
+recv	ack	#53,	sack	#193
+send	data	#194,	winSize = 16
+recv	ack	#53,	sack	#194
+send	data	#195,	winSize = 16
+recv	ack	#53,	sack	#195
+send	data	#196,	winSize = 16
+recv	ack	#53,	sack	#196
+send	data	#197,	winSize = 16
+recv	ack	#53,	sack	#197
+send	data	#198,	winSize = 16
+recv	ack	#53,	sack	#198
+send	data	#199,	winSize = 16
+recv	ack	#53,	sack	#199
+send	data	#200,	winSize = 16
+recv	ack	#53,	sack	#200
+send	data	#201,	winSize = 16
+recv	ack	#53,	sack	#201
+send	data	#202,	winSize = 16
+recv	ack	#53,	sack	#202
+send	data	#203,	winSize = 16
+recv	ack	#53,	sack	#203
+send	data	#204,	winSize = 16
+recv	ack	#53,	sack	#204
+send	data	#205,	winSize = 16
+recv	ack	#53,	sack	#205
+send	data	#206,	winSize = 16
+recv	ack	#53,	sack	#53
+time	out,	threshold = 8,	winSize = 1
+resnd	data	#54,	winSize = 1
+recv	ack	#54,	sack	#54
+resnd	data	#55,	winSize = 2
+resnd	data	#61,	winSize = 2
+recv	ack	#60,	sack	#55
+resnd	data	#64,	winSize = 3
+resnd	data	#80,	winSize = 3
+recv	ack	#63,	sack	#61
+resnd	data	#85,	winSize = 4
+resnd	data	#87,	winSize = 4
+recv	ack	#79,	sack	#64
+resnd	data	#89,	winSize = 5
+resnd	data	#90,	winSize = 5
+recv	ack	#84,	sack	#80
+resnd	data	#91,	winSize = 6
+resnd	data	#104,	winSize = 6
+recv	ack	#86,	sack	#85
+resnd	data	#121,	winSize = 7
+resnd	data	#128,	winSize = 7
+recv	ack	#88,	sack	#87
+resnd	data	#144,	winSize = 8
+resnd	data	#184,	winSize = 8
+recv	ack	#89,	sack	#89
+resnd	data	#206,	winSize = 8
+recv	ack	#90,	sack	#90
+send	data	#207,	winSize = 8
+recv	ack	#103,	sack	#91
+send	data	#208,	winSize = 8
+recv	ack	#120,	sack	#104
+send	data	#209,	winSize = 8
+recv	ack	#127,	sack	#121
+send	data	#210,	winSize = 8
+recv	ack	#143,	sack	#128
+send	data	#211,	winSize = 8
+recv	ack	#183,	sack	#144
+send	data	#212,	winSize = 8
+recv	ack	#205,	sack	#184
+send	data	#213,	winSize = 9
+send	data	#214,	winSize = 9
+recv	ack	#206,	sack	#206
+send	data	#215,	winSize = 9
+recv	ack	#207,	sack	#207
+send	data	#216,	winSize = 9
+recv	ack	#208,	sack	#208
+send	data	#217,	winSize = 9
+recv	ack	#209,	sack	#209
+send	data	#218,	winSize = 9
+recv	ack	#210,	sack	#210
+send	data	#219,	winSize = 9
+recv	ack	#211,	sack	#211
+send	data	#220,	winSize = 9
+recv	ack	#212,	sack	#212
+send	data	#221,	winSize = 9
+recv	ack	#213,	sack	#213
+send	data	#222,	winSize = 9
+recv	ack	#214,	sack	#214
+send	data	#223,	winSize = 9
+recv	ack	#215,	sack	#215
+send	data	#224,	winSize = 10
+send	data	#225,	winSize = 10
+recv	ack	#216,	sack	#216
+send	data	#226,	winSize = 10
+recv	ack	#217,	sack	#217
+send	data	#227,	winSize = 10
+recv	ack	#218,	sack	#218
+send	data	#228,	winSize = 10
+recv	ack	#219,	sack	#219
+send	data	#229,	winSize = 10
+recv	ack	#220,	sack	#220
+send	data	#230,	winSize = 10
+recv	ack	#221,	sack	#221
+send	data	#231,	winSize = 10
+recv	ack	#222,	sack	#222
+send	data	#232,	winSize = 10
+recv	ack	#223,	sack	#223
+send	data	#233,	winSize = 10
+recv	ack	#224,	sack	#224
+send	data	#234,	winSize = 11
+send	data	#235,	winSize = 11
+recv	ack	#225,	sack	#225
+send	data	#236,	winSize = 11
+recv	ack	#226,	sack	#226
+send	data	#237,	winSize = 11
+recv	ack	#227,	sack	#227
+send	data	#238,	winSize = 11
+recv	ack	#228,	sack	#228
+send	data	#239,	winSize = 11
+recv	ack	#229,	sack	#229
+send	data	#240,	winSize = 11
+recv	ack	#230,	sack	#230
+send	data	#241,	winSize = 11
+recv	ack	#231,	sack	#231
+send	data	#242,	winSize = 11
+recv	ack	#231,	sack	#231
+recv	ack	#231,	sack	#233
+send	data	#243,	winSize = 11
+recv	ack	#231,	sack	#234
+send	data	#244,	winSize = 11
+resnd	data	#232,	winSize = 11
+recv	ack	#231,	sack	#235
+send	data	#245,	winSize = 11
+recv	ack	#231,	sack	#236
+send	data	#246,	winSize = 11
+recv	ack	#231,	sack	#237
+send	data	#247,	winSize = 11
+recv	ack	#231,	sack	#238
+send	data	#248,	winSize = 11
+recv	ack	#231,	sack	#231
+recv	ack	#231,	sack	#240
+send	data	#249,	winSize = 11
+recv	ack	#231,	sack	#241
+send	data	#250,	winSize = 11
+recv	ack	#231,	sack	#242
+send	data	#251,	winSize = 11
+recv	ack	#231,	sack	#243
+send	data	#252,	winSize = 11
+recv	ack	#231,	sack	#244
+send	data	#253,	winSize = 11
+recv	ack	#238,	sack	#232
+send	data	#254,	winSize = 11
+recv	ack	#238,	sack	#245
+send	data	#255,	winSize = 11
+recv	ack	#238,	sack	#246
+send	data	#256,	winSize = 11
+recv	ack	#238,	sack	#247
+send	data	#257,	winSize = 11
+resnd	data	#239,	winSize = 11
+recv	ack	#238,	sack	#248
+send	data	#258,	winSize = 11
+recv	ack	#238,	sack	#249
+send	data	#259,	winSize = 11
+recv	ack	#238,	sack	#250
+send	data	#260,	winSize = 11
+recv	ack	#238,	sack	#251
+send	data	#261,	winSize = 11
+recv	ack	#238,	sack	#252
+send	data	#262,	winSize = 11
+recv	ack	#238,	sack	#253
+send	data	#263,	winSize = 11
+recv	ack	#238,	sack	#254
+send	data	#264,	winSize = 11
+recv	ack	#238,	sack	#255
+send	data	#265,	winSize = 11
+recv	ack	#238,	sack	#256
+send	data	#266,	winSize = 11
+recv	ack	#238,	sack	#238
+recv	ack	#256,	sack	#239
+send	data	#267,	winSize = 11
+recv	ack	#256,	sack	#258
+send	data	#268,	winSize = 11
+recv	ack	#256,	sack	#259
+send	data	#269,	winSize = 11
+recv	ack	#256,	sack	#260
+send	data	#270,	winSize = 11
+resnd	data	#257,	winSize = 11
+recv	ack	#256,	sack	#261
+send	data	#271,	winSize = 11
+recv	ack	#256,	sack	#262
+send	data	#272,	winSize = 11
+recv	ack	#256,	sack	#263
+send	data	#273,	winSize = 11
+recv	ack	#256,	sack	#264
+send	data	#274,	winSize = 11
+recv	ack	#256,	sack	#265
+send	data	#275,	winSize = 11
+recv	ack	#256,	sack	#266
+send	data	#276,	winSize = 11
+recv	ack	#256,	sack	#267
+send	data	#277,	winSize = 11
+recv	ack	#256,	sack	#268
+send	data	#278,	winSize = 11
+recv	ack	#256,	sack	#269
+send	data	#279,	winSize = 11
+recv	ack	#256,	sack	#270
+send	data	#280,	winSize = 11
+recv	ack	#270,	sack	#257
+send	data	#281,	winSize = 11
+recv	ack	#271,	sack	#271
+send	data	#282,	winSize = 12
+send	data	#283,	winSize = 12
+recv	ack	#272,	sack	#272
+send	data	#284,	winSize = 12
+recv	ack	#273,	sack	#273
+send	data	#285,	winSize = 12
+recv	ack	#274,	sack	#274
+send	data	#286,	winSize = 12
+recv	ack	#275,	sack	#275
+send	data	#287,	winSize = 12
+recv	ack	#276,	sack	#276
+send	data	#288,	winSize = 12
+recv	ack	#277,	sack	#277
+send	data	#289,	winSize = 12
+recv	ack	#278,	sack	#278
+send	data	#290,	winSize = 12
+recv	ack	#279,	sack	#279
+send	data	#291,	winSize = 12
+recv	ack	#280,	sack	#280
+send	data	#292,	winSize = 12
+recv	ack	#281,	sack	#281
+send	data	#293,	winSize = 12
+recv	ack	#282,	sack	#282
+send	data	#294,	winSize = 12
+recv	ack	#283,	sack	#283
+send	data	#295,	winSize = 13
+send	data	#296,	winSize = 13
+recv	ack	#284,	sack	#284
+send	data	#297,	winSize = 13
+recv	ack	#285,	sack	#285
+send	data	#298,	winSize = 13
+recv	ack	#286,	sack	#286
+send	data	#299,	winSize = 13
+recv	ack	#287,	sack	#287
+send	data	#300,	winSize = 13
+recv	ack	#288,	sack	#288
+send	data	#301,	winSize = 13
+recv	ack	#289,	sack	#289
+send	data	#302,	winSize = 13
+recv	ack	#290,	sack	#290
+send	data	#303,	winSize = 13
+recv	ack	#291,	sack	#291
+send	data	#304,	winSize = 13
+recv	ack	#292,	sack	#292
+send	data	#305,	winSize = 13
+recv	ack	#293,	sack	#293
+send	data	#306,	winSize = 13
+recv	ack	#294,	sack	#294
+send	data	#307,	winSize = 13
+recv	ack	#295,	sack	#295
+send	data	#308,	winSize = 13
+recv	ack	#296,	sack	#296
+send	data	#309,	winSize = 14
+send	data	#310,	winSize = 14
+recv	ack	#296,	sack	#298
+send	data	#311,	winSize = 14
+recv	ack	#296,	sack	#299
+send	data	#312,	winSize = 14
+recv	ack	#296,	sack	#300
+send	data	#313,	winSize = 14
+resnd	data	#297,	winSize = 14
+recv	ack	#296,	sack	#301
+send	data	#314,	winSize = 14
+recv	ack	#296,	sack	#302
+send	data	#315,	winSize = 14
+recv	ack	#296,	sack	#303
+send	data	#316,	winSize = 14
+recv	ack	#296,	sack	#304
+send	data	#317,	winSize = 14
+recv	ack	#296,	sack	#305
+send	data	#318,	winSize = 14
+recv	ack	#296,	sack	#306
+send	data	#319,	winSize = 14
+recv	ack	#296,	sack	#307
+send	data	#320,	winSize = 14
+recv	ack	#296,	sack	#309
+send	data	#321,	winSize = 14
+recv	ack	#296,	sack	#311
+send	data	#322,	winSize = 14
+recv	ack	#296,	sack	#312
+send	data	#323,	winSize = 14
+recv	ack	#296,	sack	#313
+send	data	#324,	winSize = 14
+recv	ack	#307,	sack	#297
+send	data	#325,	winSize = 14
+recv	ack	#307,	sack	#314
+send	data	#326,	winSize = 14
+recv	ack	#307,	sack	#315
+send	data	#327,	winSize = 14
+recv	ack	#307,	sack	#316
+send	data	#328,	winSize = 14
+resnd	data	#308,	winSize = 14
+recv	ack	#307,	sack	#317
+send	data	#329,	winSize = 14
+recv	ack	#307,	sack	#307
+recv	ack	#307,	sack	#319
+send	data	#330,	winSize = 14
+recv	ack	#307,	sack	#320
+send	data	#331,	winSize = 14
+recv	ack	#307,	sack	#321
+send	data	#332,	winSize = 14
+recv	ack	#307,	sack	#322
+send	data	#333,	winSize = 14
+recv	ack	#307,	sack	#323
+send	data	#334,	winSize = 14
+recv	ack	#307,	sack	#324
+send	data	#335,	winSize = 14
+recv	ack	#307,	sack	#325
+send	data	#336,	winSize = 14
+recv	ack	#307,	sack	#326
+send	data	#337,	winSize = 14
+recv	ack	#307,	sack	#327
+send	data	#338,	winSize = 14
+recv	ack	#307,	sack	#328
+send	data	#339,	winSize = 14
+recv	ack	#309,	sack	#308
+send	data	#340,	winSize = 14
+recv	ack	#309,	sack	#329
+send	data	#341,	winSize = 14
+recv	ack	#309,	sack	#330
+send	data	#342,	winSize = 14
+recv	ack	#309,	sack	#309
+resnd	data	#310,	winSize = 14
+recv	ack	#309,	sack	#332
+send	data	#343,	winSize = 14
+recv	ack	#309,	sack	#333
+send	data	#344,	winSize = 14
+recv	ack	#309,	sack	#334
+send	data	#345,	winSize = 14
+recv	ack	#309,	sack	#335
+send	data	#346,	winSize = 14
+recv	ack	#309,	sack	#336
+send	data	#347,	winSize = 14
+recv	ack	#309,	sack	#337
+send	data	#348,	winSize = 14
+recv	ack	#309,	sack	#338
+send	data	#349,	winSize = 14
+recv	ack	#309,	sack	#339
+send	data	#350,	winSize = 14
+recv	ack	#309,	sack	#340
+send	data	#351,	winSize = 14
+recv	ack	#309,	sack	#341
+send	data	#352,	winSize = 14
+recv	ack	#317,	sack	#310
+send	data	#353,	winSize = 14
+recv	ack	#317,	sack	#343
+send	data	#354,	winSize = 14
+recv	ack	#317,	sack	#344
+send	data	#355,	winSize = 14
+recv	ack	#317,	sack	#345
+send	data	#356,	winSize = 14
+resnd	data	#318,	winSize = 14
+recv	ack	#317,	sack	#347
+send	data	#357,	winSize = 14
+recv	ack	#317,	sack	#348
+send	data	#358,	winSize = 14
+recv	ack	#317,	sack	#349
+send	data	#359,	winSize = 14
+recv	ack	#317,	sack	#350
+send	data	#360,	winSize = 14
+recv	ack	#317,	sack	#351
+send	data	#361,	winSize = 14
+recv	ack	#317,	sack	#352
+send	data	#362,	winSize = 14
+recv	ack	#317,	sack	#353
+send	data	#363,	winSize = 14
+recv	ack	#317,	sack	#354
+send	data	#364,	winSize = 14
+recv	ack	#317,	sack	#355
+send	data	#365,	winSize = 14
+recv	ack	#317,	sack	#356
+send	data	#366,	winSize = 14
+recv	ack	#330,	sack	#318
+send	data	#367,	winSize = 14
+recv	ack	#330,	sack	#330
+recv	ack	#330,	sack	#358
+send	data	#368,	winSize = 14
+recv	ack	#330,	sack	#359
+send	data	#369,	winSize = 14
+resnd	data	#331,	winSize = 14
+recv	ack	#330,	sack	#360
+send	data	#370,	winSize = 14
+recv	ack	#330,	sack	#361
+send	data	#371,	winSize = 14
+recv	ack	#330,	sack	#362
+send	data	#372,	winSize = 14
+recv	ack	#330,	sack	#363
+send	data	#373,	winSize = 14
+recv	ack	#330,	sack	#364
+send	data	#374,	winSize = 14
+recv	ack	#330,	sack	#365
+send	data	#375,	winSize = 14
+recv	ack	#330,	sack	#366
+send	data	#376,	winSize = 14
+recv	ack	#330,	sack	#367
+send	data	#377,	winSize = 14
+recv	ack	#330,	sack	#369
+send	data	#378,	winSize = 14
+recv	ack	#341,	sack	#331
+send	data	#379,	winSize = 14
+recv	ack	#341,	sack	#370
+send	data	#380,	winSize = 14
+recv	ack	#341,	sack	#371
+send	data	#381,	winSize = 14
+recv	ack	#341,	sack	#372
+send	data	#382,	winSize = 14
+resnd	data	#342,	winSize = 14
+recv	ack	#341,	sack	#373
+send	data	#383,	winSize = 14
+recv	ack	#341,	sack	#374
+send	data	#384,	winSize = 14
+recv	ack	#341,	sack	#375
+send	data	#385,	winSize = 14
+recv	ack	#341,	sack	#376
+send	data	#386,	winSize = 14
+recv	ack	#341,	sack	#377
+send	data	#387,	winSize = 14
+recv	ack	#341,	sack	#378
+send	data	#388,	winSize = 14
+recv	ack	#341,	sack	#379
+send	data	#389,	winSize = 14
+recv	ack	#341,	sack	#341
+recv	ack	#341,	sack	#382
+send	data	#390,	winSize = 14
+recv	ack	#345,	sack	#342
+send	data	#391,	winSize = 14
+recv	ack	#345,	sack	#383
+send	data	#392,	winSize = 14
+recv	ack	#345,	sack	#384
+send	data	#393,	winSize = 14
+recv	ack	#345,	sack	#385
+send	data	#394,	winSize = 14
+resnd	data	#346,	winSize = 14
+recv	ack	#345,	sack	#386
+send	data	#395,	winSize = 14
+recv	ack	#345,	sack	#387
+send	data	#396,	winSize = 14
+recv	ack	#345,	sack	#388
+send	data	#397,	winSize = 14
+recv	ack	#345,	sack	#389
+send	data	#398,	winSize = 14
+recv	ack	#345,	sack	#390
+send	data	#399,	winSize = 14
+recv	ack	#345,	sack	#345
+recv	ack	#345,	sack	#392
+send	data	#400,	winSize = 14
+recv	ack	#345,	sack	#345
+recv	ack	#345,	sack	#394
+send	data	#401,	winSize = 14
+recv	ack	#356,	sack	#346
+send	data	#402,	winSize = 14
+recv	ack	#356,	sack	#395
+send	data	#403,	winSize = 14
+recv	ack	#356,	sack	#396
+send	data	#404,	winSize = 14
+recv	ack	#356,	sack	#397
+send	data	#405,	winSize = 14
+resnd	data	#357,	winSize = 14
+recv	ack	#356,	sack	#398
+send	data	#406,	winSize = 14
+recv	ack	#356,	sack	#399
+send	data	#407,	winSize = 14
+recv	ack	#356,	sack	#400
+send	data	#408,	winSize = 14
+recv	ack	#356,	sack	#401
+send	data	#409,	winSize = 14
+recv	ack	#356,	sack	#356
+recv	ack	#356,	sack	#404
+send	data	#410,	winSize = 14
+recv	ack	#356,	sack	#405
+send	data	#411,	winSize = 14
+recv	ack	#367,	sack	#357
+send	data	#412,	winSize = 14
+recv	ack	#367,	sack	#406
+send	data	#413,	winSize = 14
+recv	ack	#367,	sack	#407
+send	data	#414,	winSize = 14
+recv	ack	#367,	sack	#408
+send	data	#415,	winSize = 14
+resnd	data	#368,	winSize = 14
+recv	ack	#367,	sack	#409
+send	data	#416,	winSize = 14
+recv	ack	#367,	sack	#410
+send	data	#417,	winSize = 14
+recv	ack	#367,	sack	#411
+send	data	#418,	winSize = 14
+recv	ack	#367,	sack	#367
+recv	ack	#367,	sack	#413
+send	data	#419,	winSize = 14
+recv	ack	#367,	sack	#414
+send	data	#420,	winSize = 14
+recv	ack	#367,	sack	#415
+send	data	#421,	winSize = 14
+recv	ack	#367,	sack	#416
+send	data	#422,	winSize = 14
+recv	ack	#367,	sack	#417
+send	data	#423,	winSize = 14
+recv	ack	#367,	sack	#418
+send	data	#424,	winSize = 14
+recv	ack	#367,	sack	#419
+send	data	#425,	winSize = 14
+recv	ack	#367,	sack	#420
+send	data	#426,	winSize = 14
+recv	ack	#367,	sack	#422
+send	data	#427,	winSize = 14
+recv	ack	#367,	sack	#423
+send	data	#428,	winSize = 14
+recv	ack	#367,	sack	#424
+send	data	#429,	winSize = 14
+recv	ack	#367,	sack	#367
+recv	ack	#367,	sack	#426
+send	data	#430,	winSize = 14
+recv	ack	#367,	sack	#427
+send	data	#431,	winSize = 14
+recv	ack	#367,	sack	#367
+recv	ack	#367,	sack	#429
+send	data	#432,	winSize = 14
+recv	ack	#367,	sack	#430
+send	data	#433,	winSize = 14
+recv	ack	#367,	sack	#431
+send	data	#434,	winSize = 14
+recv	ack	#367,	sack	#432
+send	data	#435,	winSize = 14
+recv	ack	#367,	sack	#433
+send	data	#436,	winSize = 14
+recv	ack	#367,	sack	#434
+send	data	#437,	winSize = 14
+recv	ack	#367,	sack	#436
+send	data	#438,	winSize = 14
+recv	ack	#367,	sack	#437
+send	data	#439,	winSize = 14
+recv	ack	#367,	sack	#438
+send	data	#440,	winSize = 14
+recv	ack	#367,	sack	#439
+send	data	#441,	winSize = 14
+recv	ack	#367,	sack	#440
+send	data	#442,	winSize = 14
+recv	ack	#367,	sack	#442
+send	data	#443,	winSize = 14
+recv	ack	#367,	sack	#443
+send	data	#444,	winSize = 14
+recv	ack	#367,	sack	#444
+send	data	#445,	winSize = 14
+recv	ack	#367,	sack	#445
+send	data	#446,	winSize = 14
+recv	ack	#367,	sack	#446
+send	data	#447,	winSize = 14
+recv	ack	#367,	sack	#447
+send	data	#448,	winSize = 14
+recv	ack	#367,	sack	#448
+send	data	#449,	winSize = 14
+recv	ack	#367,	sack	#449
+send	data	#450,	winSize = 14
+recv	ack	#367,	sack	#450
+send	data	#451,	winSize = 14
+recv	ack	#367,	sack	#451
+send	data	#452,	winSize = 14
+recv	ack	#367,	sack	#452
+send	data	#453,	winSize = 14
+recv	ack	#367,	sack	#453
+send	data	#454,	winSize = 14
+recv	ack	#367,	sack	#454
+send	data	#455,	winSize = 14
+recv	ack	#367,	sack	#455
+send	data	#456,	winSize = 14
+recv	ack	#367,	sack	#456
+send	data	#457,	winSize = 14
+recv	ack	#367,	sack	#457
+send	data	#458,	winSize = 14
+recv	ack	#367,	sack	#458
+send	data	#459,	winSize = 14
+recv	ack	#367,	sack	#367
+time	out,	threshold = 7,	winSize = 1
+resnd	data	#368,	winSize = 1
+recv	ack	#379,	sack	#368
+resnd	data	#380,	winSize = 2
+resnd	data	#381,	winSize = 2
+recv	ack	#380,	sack	#380
+resnd	data	#391,	winSize = 3
+resnd	data	#393,	winSize = 3
+recv	ack	#390,	sack	#381
+resnd	data	#402,	winSize = 4
+resnd	data	#403,	winSize = 4
+recv	ack	#392,	sack	#391
+resnd	data	#412,	winSize = 5
+resnd	data	#421,	winSize = 5
+recv	ack	#401,	sack	#393
+resnd	data	#425,	winSize = 6
+resnd	data	#428,	winSize = 6
+recv	ack	#401,	sack	#403
+resnd	data	#435,	winSize = 6
+recv	ack	#401,	sack	#412
+resnd	data	#441,	winSize = 6
+recv	ack	#401,	sack	#421
+resnd	data	#459,	winSize = 6
+resnd	data	#402,	winSize = 6
+recv	ack	#401,	sack	#425
+send	data	#460,	winSize = 6
+recv	ack	#401,	sack	#428
+send	data	#461,	winSize = 6
+recv	ack	#401,	sack	#435
+send	data	#462,	winSize = 6
+recv	ack	#401,	sack	#441
+send	data	#463,	winSize = 6
+recv	ack	#401,	sack	#459
+send	data	#464,	winSize = 6
+recv	ack	#459,	sack	#402
+send	data	#465,	winSize = 7
+send	data	#466,	winSize = 7
+recv	ack	#460,	sack	#460
+send	data	#467,	winSize = 7
+recv	ack	#461,	sack	#461
+send	data	#468,	winSize = 7
+recv	ack	#462,	sack	#462
+send	data	#469,	winSize = 7
+recv	ack	#463,	sack	#463
+send	data	#470,	winSize = 7
+recv	ack	#464,	sack	#464
+send	data	#471,	winSize = 7
+recv	ack	#465,	sack	#465
+send	data	#472,	winSize = 7
+recv	ack	#466,	sack	#466
+send	data	#473,	winSize = 8
+send	data	#474,	winSize = 8
+recv	ack	#466,	sack	#468
+send	data	#475,	winSize = 8
+recv	ack	#466,	sack	#469
+send	data	#476,	winSize = 8
+recv	ack	#466,	sack	#466
+resnd	data	#467,	winSize = 8
+recv	ack	#466,	sack	#471
+send	data	#477,	winSize = 8
+recv	ack	#466,	sack	#472
+send	data	#478,	winSize = 8
+recv	ack	#466,	sack	#473
+send	data	#479,	winSize = 8
+recv	ack	#466,	sack	#474
+send	data	#480,	winSize = 8
+recv	ack	#466,	sack	#466
+recv	ack	#466,	sack	#476
+send	data	#481,	winSize = 8
+recv	ack	#466,	sack	#466
+recv	ack	#466,	sack	#477
+send	data	#482,	winSize = 8
+recv	ack	#466,	sack	#466
+recv	ack	#466,	sack	#466
+recv	ack	#466,	sack	#480
+send	data	#483,	winSize = 8
+recv	ack	#466,	sack	#481
+send	data	#484,	winSize = 8
+recv	ack	#466,	sack	#482
+send	data	#485,	winSize = 8
+recv	ack	#466,	sack	#483
+send	data	#486,	winSize = 8
+recv	ack	#466,	sack	#484
+send	data	#487,	winSize = 8
+recv	ack	#466,	sack	#485
+send	data	#488,	winSize = 8
+recv	ack	#466,	sack	#486
+send	data	#489,	winSize = 8
+recv	ack	#466,	sack	#487
+send	data	#490,	winSize = 8
+recv	ack	#466,	sack	#488
+send	data	#491,	winSize = 8
+recv	ack	#466,	sack	#489
+send	data	#492,	winSize = 8
+recv	ack	#466,	sack	#490
+send	data	#493,	winSize = 8
+recv	ack	#466,	sack	#491
+send	data	#494,	winSize = 8
+recv	ack	#466,	sack	#492
+send	data	#495,	winSize = 8
+recv	ack	#466,	sack	#493
+send	data	#496,	winSize = 8
+recv	ack	#466,	sack	#466
+recv	ack	#466,	sack	#496
+send	data	#497,	winSize = 8
+recv	ack	#466,	sack	#497
+send	data	#498,	winSize = 8
+recv	ack	#466,	sack	#498
+send	data	#499,	winSize = 8
+recv	ack	#466,	sack	#499
+send	data	#500,	winSize = 8
+recv	ack	#466,	sack	#500
+send	data	#501,	winSize = 8
+recv	ack	#466,	sack	#501
+send	data	#502,	winSize = 8
+recv	ack	#466,	sack	#502
+send	data	#503,	winSize = 8
+recv	ack	#466,	sack	#503
+send	data	#504,	winSize = 8
+recv	ack	#466,	sack	#504
+send	data	#505,	winSize = 8
+recv	ack	#466,	sack	#505
+send	data	#506,	winSize = 8
+recv	ack	#466,	sack	#506
+send	data	#507,	winSize = 8
+recv	ack	#466,	sack	#507
+send	data	#508,	winSize = 8
+recv	ack	#466,	sack	#508
+send	data	#509,	winSize = 8
+recv	ack	#466,	sack	#509
+send	data	#510,	winSize = 8
+recv	ack	#466,	sack	#510
+send	data	#511,	winSize = 8
+recv	ack	#466,	sack	#511
+send	data	#512,	winSize = 8
+recv	ack	#466,	sack	#512
+send	data	#513,	winSize = 8
+recv	ack	#466,	sack	#466
+time	out,	threshold = 4,	winSize = 1
+resnd	data	#467,	winSize = 1
+recv	ack	#469,	sack	#467
+resnd	data	#470,	winSize = 2
+resnd	data	#475,	winSize = 2
+recv	ack	#474,	sack	#470
+resnd	data	#478,	winSize = 3
+resnd	data	#479,	winSize = 3
+recv	ack	#477,	sack	#475
+resnd	data	#494,	winSize = 4
+resnd	data	#495,	winSize = 4
+recv	ack	#478,	sack	#478
+resnd	data	#513,	winSize = 4
+recv	ack	#493,	sack	#479
+send	data	#514,	winSize = 4
+recv	ack	#493,	sack	#495
+send	data	#515,	winSize = 4
+recv	ack	#493,	sack	#493
+recv	ack	#493,	sack	#493
+resnd	data	#494,	winSize = 4
+recv	ack	#493,	sack	#493
+recv	ack	#512,	sack	#494
+send	data	#516,	winSize = 4
+recv	ack	#512,	sack	#516
+send	data	#517,	winSize = 4
+recv	ack	#512,	sack	#517
+send	data	#518,	winSize = 4
+recv	ack	#512,	sack	#518
+send	data	#519,	winSize = 4
+resnd	data	#513,	winSize = 4
+recv	ack	#512,	sack	#519
+send	data	#520,	winSize = 4
+recv	ack	#513,	sack	#513
+send	data	#521,	winSize = 5
+send	data	#522,	winSize = 5
+recv	ack	#513,	sack	#520
+send	data	#523,	winSize = 5
+recv	ack	#513,	sack	#521
+send	data	#524,	winSize = 5
+recv	ack	#513,	sack	#522
+send	data	#525,	winSize = 5
+resnd	data	#514,	winSize = 5
+recv	ack	#513,	sack	#523
+send	data	#526,	winSize = 5
+recv	ack	#513,	sack	#524
+send	data	#527,	winSize = 5
+recv	ack	#513,	sack	#525
+send	data	#528,	winSize = 5
+recv	ack	#514,	sack	#514
+send	data	#529,	winSize = 5
+recv	ack	#514,	sack	#526
+send	data	#530,	winSize = 5
+recv	ack	#514,	sack	#527
+send	data	#531,	winSize = 5
+recv	ack	#514,	sack	#528
+send	data	#532,	winSize = 5
+resnd	data	#515,	winSize = 5
+recv	ack	#514,	sack	#529
+send	data	#533,	winSize = 5
+recv	ack	#514,	sack	#530
+send	data	#534,	winSize = 5
+recv	ack	#514,	sack	#531
+send	data	#535,	winSize = 5
+recv	ack	#514,	sack	#532
+send	data	#536,	winSize = 5
+recv	ack	#532,	sack	#515
+send	data	#537,	winSize = 5
+recv	ack	#533,	sack	#533
+send	data	#538,	winSize = 5
+recv	ack	#534,	sack	#534
+send	data	#539,	winSize = 5
+recv	ack	#535,	sack	#535
+send	data	#540,	winSize = 6
+send	data	#541,	winSize = 6
+recv	ack	#536,	sack	#536
+send	data	#542,	winSize = 6
+recv	ack	#537,	sack	#537
+send	data	#543,	winSize = 6
+recv	ack	#538,	sack	#538
+send	data	#544,	winSize = 6
+recv	ack	#539,	sack	#539
+send	data	#545,	winSize = 6
+recv	ack	#539,	sack	#541
+send	data	#546,	winSize = 6
+recv	ack	#539,	sack	#542
+send	data	#547,	winSize = 6
+recv	ack	#539,	sack	#543
+send	data	#548,	winSize = 6
+resnd	data	#540,	winSize = 6
+recv	ack	#539,	sack	#544
+send	data	#549,	winSize = 6
+recv	ack	#539,	sack	#539
+recv	ack	#539,	sack	#546
+send	data	#550,	winSize = 6
+recv	ack	#539,	sack	#547
+send	data	#551,	winSize = 6
+recv	ack	#539,	sack	#548
+send	data	#552,	winSize = 6
+recv	ack	#544,	sack	#540
+send	data	#553,	winSize = 6
+recv	ack	#544,	sack	#549
+send	data	#554,	winSize = 6
+recv	ack	#544,	sack	#550
+send	data	#555,	winSize = 6
+recv	ack	#544,	sack	#551
+send	data	#556,	winSize = 6
+resnd	data	#545,	winSize = 6
+recv	ack	#544,	sack	#552
+send	data	#557,	winSize = 6
+recv	ack	#544,	sack	#553
+send	data	#558,	winSize = 6
+recv	ack	#544,	sack	#554
+send	data	#559,	winSize = 6
+recv	ack	#544,	sack	#555
+send	data	#560,	winSize = 6
+recv	ack	#544,	sack	#556
+send	data	#561,	winSize = 6
+recv	ack	#556,	sack	#545
+send	data	#562,	winSize = 7
+send	data	#563,	winSize = 7
+recv	ack	#557,	sack	#557
+send	data	#564,	winSize = 7
+recv	ack	#558,	sack	#558
+send	data	#565,	winSize = 7
+recv	ack	#559,	sack	#559
+send	data	#566,	winSize = 7
+recv	ack	#560,	sack	#560
+send	data	#567,	winSize = 7
+recv	ack	#561,	sack	#561
+send	data	#568,	winSize = 7
+recv	ack	#562,	sack	#562
+send	data	#569,	winSize = 7
+recv	ack	#563,	sack	#563
+send	data	#570,	winSize = 8
+send	data	#571,	winSize = 8
+recv	ack	#563,	sack	#563
+recv	ack	#563,	sack	#565
+send	data	#572,	winSize = 8
+recv	ack	#563,	sack	#563
+resnd	data	#564,	winSize = 8
+recv	ack	#563,	sack	#567
+send	data	#573,	winSize = 8
+recv	ack	#563,	sack	#568
+send	data	#574,	winSize = 8
+recv	ack	#563,	sack	#569
+send	data	#575,	winSize = 8
+recv	ack	#563,	sack	#570
+send	data	#576,	winSize = 8
+recv	ack	#563,	sack	#571
+send	data	#577,	winSize = 8
+recv	ack	#563,	sack	#572
+send	data	#578,	winSize = 8
+recv	ack	#565,	sack	#564
+send	data	#579,	winSize = 8
+recv	ack	#565,	sack	#573
+send	data	#580,	winSize = 8
+recv	ack	#565,	sack	#574
+send	data	#581,	winSize = 8
+recv	ack	#565,	sack	#575
+send	data	#582,	winSize = 8
+resnd	data	#566,	winSize = 8
+recv	ack	#565,	sack	#576
+send	data	#583,	winSize = 8
+recv	ack	#565,	sack	#565
+recv	ack	#565,	sack	#565
+recv	ack	#565,	sack	#579
+send	data	#584,	winSize = 8
+recv	ack	#565,	sack	#580
+send	data	#585,	winSize = 8
+recv	ack	#565,	sack	#581
+send	data	#586,	winSize = 8
+recv	ack	#565,	sack	#582
+send	data	#587,	winSize = 8
+recv	ack	#576,	sack	#566
+send	data	#588,	winSize = 8
+recv	ack	#576,	sack	#583
+send	data	#589,	winSize = 8
+recv	ack	#576,	sack	#576
+recv	ack	#576,	sack	#585
+send	data	#590,	winSize = 8
+resnd	data	#577,	winSize = 8
+recv	ack	#576,	sack	#586
+send	data	#591,	winSize = 8
+recv	ack	#576,	sack	#587
+send	data	#592,	winSize = 8
+recv	ack	#576,	sack	#588
+send	data	#593,	winSize = 8
+recv	ack	#576,	sack	#589
+send	data	#594,	winSize = 8
+recv	ack	#576,	sack	#590
+send	data	#595,	winSize = 8
+recv	ack	#577,	sack	#577
+send	data	#596,	winSize = 8
+recv	ack	#577,	sack	#591
+send	data	#597,	winSize = 8
+recv	ack	#577,	sack	#592
+send	data	#598,	winSize = 8
+recv	ack	#577,	sack	#593
+send	data	#599,	winSize = 8
+resnd	data	#578,	winSize = 8
+recv	ack	#577,	sack	#594
+send	data	#600,	winSize = 8
+recv	ack	#577,	sack	#595
+send	data	#601,	winSize = 8
+recv	ack	#577,	sack	#596
+send	data	#602,	winSize = 8
+recv	ack	#577,	sack	#597
+send	data	#603,	winSize = 8
+recv	ack	#577,	sack	#598
+send	data	#604,	winSize = 8
+recv	ack	#577,	sack	#599
+send	data	#605,	winSize = 8
+recv	ack	#583,	sack	#578
+send	data	#606,	winSize = 8
+recv	ack	#583,	sack	#600
+send	data	#607,	winSize = 8
+recv	ack	#583,	sack	#601
+send	data	#608,	winSize = 8
+recv	ack	#583,	sack	#602
+send	data	#609,	winSize = 8
+resnd	data	#584,	winSize = 8
+recv	ack	#583,	sack	#603
+send	data	#610,	winSize = 8
+recv	ack	#583,	sack	#604
+send	data	#611,	winSize = 8
+recv	ack	#583,	sack	#605
+send	data	#612,	winSize = 8
+recv	ack	#583,	sack	#606
+send	data	#613,	winSize = 8
+recv	ack	#583,	sack	#607
+send	data	#614,	winSize = 8
+recv	ack	#583,	sack	#608
+send	data	#615,	winSize = 8
+recv	ack	#583,	sack	#609
+send	data	#616,	winSize = 8
+recv	ack	#609,	sack	#584
+send	data	#617,	winSize = 8
+recv	ack	#609,	sack	#611
+send	data	#618,	winSize = 8
+recv	ack	#609,	sack	#612
+send	data	#619,	winSize = 8
+recv	ack	#609,	sack	#609
+resnd	data	#610,	winSize = 8
+recv	ack	#609,	sack	#615
+send	data	#620,	winSize = 8
+recv	ack	#609,	sack	#616
+send	data	#621,	winSize = 8
+recv	ack	#609,	sack	#617
+send	data	#622,	winSize = 8
+recv	ack	#609,	sack	#618
+send	data	#623,	winSize = 8
+recv	ack	#609,	sack	#619
+send	data	#624,	winSize = 8
+recv	ack	#612,	sack	#610
+send	data	#625,	winSize = 8
+recv	ack	#612,	sack	#620
+send	data	#626,	winSize = 8
+recv	ack	#612,	sack	#621
+send	data	#627,	winSize = 8
+recv	ack	#612,	sack	#622
+send	data	#628,	winSize = 8
+resnd	data	#613,	winSize = 8
+recv	ack	#612,	sack	#623
+send	data	#629,	winSize = 8
+recv	ack	#612,	sack	#624
+send	data	#630,	winSize = 8
+recv	ack	#612,	sack	#625
+send	data	#631,	winSize = 8
+recv	ack	#612,	sack	#626
+send	data	#632,	winSize = 8
+recv	ack	#612,	sack	#627
+send	data	#633,	winSize = 8
+recv	ack	#612,	sack	#628
+send	data	#634,	winSize = 8
+recv	ack	#613,	sack	#613
+send	data	#635,	winSize = 8
+recv	ack	#613,	sack	#629
+send	data	#636,	winSize = 8
+recv	ack	#613,	sack	#631
+send	data	#637,	winSize = 8
+recv	ack	#613,	sack	#632
+send	data	#638,	winSize = 8
+resnd	data	#614,	winSize = 8
+recv	ack	#613,	sack	#634
+send	data	#639,	winSize = 8
+recv	ack	#613,	sack	#636
+send	data	#640,	winSize = 8
+recv	ack	#613,	sack	#637
+send	data	#641,	winSize = 8
+recv	ack	#613,	sack	#638
+send	data	#642,	winSize = 8
+recv	ack	#629,	sack	#614
+send	data	#643,	winSize = 9
+send	data	#644,	winSize = 9
+recv	ack	#629,	sack	#639
+send	data	#645,	winSize = 9
+recv	ack	#629,	sack	#640
+send	data	#646,	winSize = 9
+recv	ack	#629,	sack	#641
+send	data	#647,	winSize = 9
+resnd	data	#630,	winSize = 9
+recv	ack	#629,	sack	#642
+send	data	#648,	winSize = 9
+recv	ack	#629,	sack	#643
+send	data	#649,	winSize = 9
+recv	ack	#629,	sack	#645
+send	data	#650,	winSize = 9
+recv	ack	#629,	sack	#646
+send	data	#651,	winSize = 9
+recv	ack	#629,	sack	#647
+send	data	#652,	winSize = 9
+recv	ack	#632,	sack	#630
+send	data	#653,	winSize = 9
+recv	ack	#632,	sack	#649
+send	data	#654,	winSize = 9
+recv	ack	#632,	sack	#650
+send	data	#655,	winSize = 9
+recv	ack	#632,	sack	#651
+send	data	#656,	winSize = 9
+resnd	data	#633,	winSize = 9
+recv	ack	#632,	sack	#652
+send	data	#657,	winSize = 9
+recv	ack	#632,	sack	#653
+send	data	#658,	winSize = 9
+recv	ack	#632,	sack	#654
+send	data	#659,	winSize = 9
+recv	ack	#632,	sack	#655
+send	data	#660,	winSize = 9
+recv	ack	#632,	sack	#656
+send	data	#661,	winSize = 9
+recv	ack	#634,	sack	#633
+send	data	#662,	winSize = 9
+recv	ack	#634,	sack	#657
+send	data	#663,	winSize = 9
+recv	ack	#634,	sack	#658
+send	data	#664,	winSize = 9
+recv	ack	#634,	sack	#659
+send	data	#665,	winSize = 9
+resnd	data	#635,	winSize = 9
+recv	ack	#634,	sack	#660
+send	data	#666,	winSize = 9
+recv	ack	#634,	sack	#661
+send	data	#667,	winSize = 9
+recv	ack	#634,	sack	#662
+send	data	#668,	winSize = 9
+recv	ack	#634,	sack	#664
+send	data	#669,	winSize = 9
+recv	ack	#634,	sack	#665
+send	data	#670,	winSize = 9
+recv	ack	#643,	sack	#635
+send	data	#671,	winSize = 9
+recv	ack	#643,	sack	#666
+send	data	#672,	winSize = 9
+recv	ack	#643,	sack	#643
+recv	ack	#643,	sack	#668
+send	data	#673,	winSize = 9
+resnd	data	#644,	winSize = 9
+recv	ack	#643,	sack	#669
+send	data	#674,	winSize = 9
+recv	ack	#643,	sack	#670
+send	data	#675,	winSize = 9
+recv	ack	#643,	sack	#671
+send	data	#676,	winSize = 9
+recv	ack	#643,	sack	#672
+send	data	#677,	winSize = 9
+recv	ack	#643,	sack	#673
+send	data	#678,	winSize = 9
+recv	ack	#647,	sack	#644
+send	data	#679,	winSize = 9
+recv	ack	#647,	sack	#674
+send	data	#680,	winSize = 9
+recv	ack	#647,	sack	#676
+send	data	#681,	winSize = 9
+recv	ack	#647,	sack	#677
+send	data	#682,	winSize = 9
+resnd	data	#648,	winSize = 9
+recv	ack	#647,	sack	#678
+send	data	#683,	winSize = 9
+recv	ack	#647,	sack	#679
+send	data	#684,	winSize = 9
+recv	ack	#647,	sack	#680
+send	data	#685,	winSize = 9
+recv	ack	#647,	sack	#681
+send	data	#686,	winSize = 9
+recv	ack	#647,	sack	#682
+send	data	#687,	winSize = 9
+recv	ack	#662,	sack	#648
+send	data	#688,	winSize = 9
+recv	ack	#662,	sack	#683
+send	data	#689,	winSize = 9
+recv	ack	#662,	sack	#684
+send	data	#690,	winSize = 9
+recv	ack	#662,	sack	#685
+send	data	#691,	winSize = 9
+resnd	data	#663,	winSize = 9
+recv	ack	#662,	sack	#686
+send	data	#692,	winSize = 9
+recv	ack	#662,	sack	#688
+send	data	#693,	winSize = 9
+recv	ack	#662,	sack	#689
+send	data	#694,	winSize = 9
+recv	ack	#662,	sack	#690
+send	data	#695,	winSize = 9
+recv	ack	#662,	sack	#691
+send	data	#696,	winSize = 9
+recv	ack	#666,	sack	#663
+send	data	#697,	winSize = 9
+recv	ack	#666,	sack	#692
+send	data	#698,	winSize = 9
+recv	ack	#666,	sack	#693
+send	data	#699,	winSize = 9
+recv	ack	#666,	sack	#694
+send	data	#700,	winSize = 9
+resnd	data	#667,	winSize = 9
+recv	ack	#666,	sack	#695
+send	data	#701,	winSize = 9
+recv	ack	#666,	sack	#696
+send	data	#702,	winSize = 9
+recv	ack	#666,	sack	#697
+send	data	#703,	winSize = 9
+recv	ack	#666,	sack	#698
+send	data	#704,	winSize = 9
+recv	ack	#666,	sack	#699
+send	data	#705,	winSize = 9
+recv	ack	#666,	sack	#700
+send	data	#706,	winSize = 9
+recv	ack	#674,	sack	#667
+send	data	#707,	winSize = 9
+recv	ack	#674,	sack	#701
+send	data	#708,	winSize = 9
+recv	ack	#674,	sack	#702
+send	data	#709,	winSize = 9
+recv	ack	#674,	sack	#704
+send	data	#710,	winSize = 9
+resnd	data	#675,	winSize = 9
+recv	ack	#674,	sack	#705
+send	data	#711,	winSize = 9
+recv	ack	#674,	sack	#706
+send	data	#712,	winSize = 9
+recv	ack	#674,	sack	#707
+send	data	#713,	winSize = 9
+recv	ack	#674,	sack	#708
+send	data	#714,	winSize = 9
+recv	ack	#674,	sack	#709
+send	data	#715,	winSize = 9
+recv	ack	#674,	sack	#710
+send	data	#716,	winSize = 9
+recv	ack	#686,	sack	#675
+send	data	#717,	winSize = 9
+recv	ack	#686,	sack	#711
+send	data	#718,	winSize = 9
+recv	ack	#686,	sack	#712
+send	data	#719,	winSize = 9
+recv	ack	#686,	sack	#713
+send	data	#720,	winSize = 9
+resnd	data	#687,	winSize = 9
+recv	ack	#686,	sack	#714
+send	data	#721,	winSize = 9
+recv	ack	#686,	sack	#686
+recv	ack	#686,	sack	#716
+send	data	#722,	winSize = 9
+recv	ack	#686,	sack	#717
+send	data	#723,	winSize = 9
+recv	ack	#686,	sack	#718
+send	data	#724,	winSize = 9
+recv	ack	#686,	sack	#719
+send	data	#725,	winSize = 9
+recv	ack	#686,	sack	#720
+send	data	#726,	winSize = 9
+recv	ack	#702,	sack	#687
+send	data	#727,	winSize = 10
+send	data	#728,	winSize = 10
+recv	ack	#702,	sack	#702
+recv	ack	#702,	sack	#723
+send	data	#729,	winSize = 10
+recv	ack	#702,	sack	#724
+send	data	#730,	winSize = 10
+resnd	data	#703,	winSize = 10
+recv	ack	#702,	sack	#702
+recv	ack	#702,	sack	#726
+send	data	#731,	winSize = 10
+recv	ack	#702,	sack	#702
+recv	ack	#702,	sack	#728
+send	data	#732,	winSize = 10
+recv	ack	#702,	sack	#729
+send	data	#733,	winSize = 10
+recv	ack	#702,	sack	#730
+send	data	#734,	winSize = 10
+recv	ack	#714,	sack	#703
+send	data	#735,	winSize = 10
+recv	ack	#714,	sack	#714
+recv	ack	#714,	sack	#732
+send	data	#736,	winSize = 10
+recv	ack	#714,	sack	#733
+send	data	#737,	winSize = 10
+resnd	data	#715,	winSize = 10
+recv	ack	#714,	sack	#734
+send	data	#738,	winSize = 10
+recv	ack	#714,	sack	#735
+send	data	#739,	winSize = 10
+recv	ack	#714,	sack	#736
+send	data	#740,	winSize = 10
+recv	ack	#714,	sack	#737
+send	data	#741,	winSize = 10
+recv	ack	#720,	sack	#715
+send	data	#742,	winSize = 10
+recv	ack	#720,	sack	#738
+send	data	#743,	winSize = 10
+recv	ack	#720,	sack	#739
+send	data	#744,	winSize = 10
+recv	ack	#720,	sack	#740
+send	data	#745,	winSize = 10
+resnd	data	#721,	winSize = 10
+recv	ack	#720,	sack	#741
+send	data	#746,	winSize = 10
+recv	ack	#720,	sack	#742
+send	data	#747,	winSize = 10
+recv	ack	#720,	sack	#743
+send	data	#748,	winSize = 10
+recv	ack	#720,	sack	#745
+send	data	#749,	winSize = 10
+recv	ack	#721,	sack	#721
+send	data	#750,	winSize = 10
+recv	ack	#721,	sack	#746
+send	data	#751,	winSize = 10
+recv	ack	#721,	sack	#747
+send	data	#752,	winSize = 10
+recv	ack	#721,	sack	#748
+send	data	#753,	winSize = 10
+resnd	data	#722,	winSize = 10
+recv	ack	#721,	sack	#749
+send	data	#754,	winSize = 10
+recv	ack	#721,	sack	#750
+send	data	#755,	winSize = 10
+recv	ack	#721,	sack	#751
+send	data	#756,	winSize = 10
+recv	ack	#721,	sack	#752
+send	data	#757,	winSize = 10
+recv	ack	#721,	sack	#753
+send	data	#758,	winSize = 10
+recv	ack	#724,	sack	#722
+send	data	#759,	winSize = 10
+recv	ack	#724,	sack	#754
+send	data	#760,	winSize = 10
+recv	ack	#724,	sack	#755
+send	data	#761,	winSize = 10
+recv	ack	#724,	sack	#756
+send	data	#762,	winSize = 10
+resnd	data	#725,	winSize = 10
+recv	ack	#724,	sack	#757
+send	data	#763,	winSize = 10
+recv	ack	#724,	sack	#759
+send	data	#764,	winSize = 10
+recv	ack	#724,	sack	#760
+send	data	#765,	winSize = 10
+recv	ack	#724,	sack	#761
+send	data	#766,	winSize = 10
+recv	ack	#724,	sack	#762
+send	data	#767,	winSize = 10
+recv	ack	#724,	sack	#724
+recv	ack	#724,	sack	#763
+send	data	#768,	winSize = 10
+recv	ack	#724,	sack	#764
+send	data	#769,	winSize = 10
+recv	ack	#724,	sack	#765
+send	data	#770,	winSize = 10
+recv	ack	#724,	sack	#767
+send	data	#771,	winSize = 10
+recv	ack	#724,	sack	#768
+send	data	#772,	winSize = 10
+recv	ack	#724,	sack	#724
+recv	ack	#724,	sack	#724
+recv	ack	#724,	sack	#724
+recv	ack	#724,	sack	#724
+time	out,	threshold = 5,	winSize = 1
+resnd	data	#725,	winSize = 1
+recv	ack	#726,	sack	#725
+resnd	data	#727,	winSize = 2
+resnd	data	#731,	winSize = 2
+recv	ack	#730,	sack	#727
+resnd	data	#744,	winSize = 3
+resnd	data	#758,	winSize = 3
+recv	ack	#743,	sack	#731
+resnd	data	#766,	winSize = 4
+resnd	data	#769,	winSize = 4
+recv	ack	#757,	sack	#744
+resnd	data	#770,	winSize = 5
+resnd	data	#771,	winSize = 5
+recv	ack	#765,	sack	#758
+resnd	data	#772,	winSize = 5
+recv	ack	#765,	sack	#765
+recv	ack	#765,	sack	#765
+recv	ack	#765,	sack	#765
+resnd	data	#766,	winSize = 5
+recv	ack	#768,	sack	#766
+send	data	#773,	winSize = 5
+recv	ack	#768,	sack	#773
+send	data	#774,	winSize = 5
+recv	ack	#768,	sack	#774
+send	data	#775,	winSize = 5
+recv	ack	#768,	sack	#775
+send	data	#776,	winSize = 5
+resnd	data	#769,	winSize = 5
+recv	ack	#768,	sack	#776
+send	data	#777,	winSize = 5
+recv	ack	#769,	sack	#769
+send	data	#778,	winSize = 5
+recv	ack	#769,	sack	#777
+send	data	#779,	winSize = 5
+recv	ack	#769,	sack	#778
+send	data	#780,	winSize = 5
+recv	ack	#769,	sack	#769
+resnd	data	#770,	winSize = 5
+recv	ack	#769,	sack	#780
+send	data	#781,	winSize = 5
+recv	ack	#769,	sack	#769
+recv	ack	#769,	sack	#781
+send	data	#782,	winSize = 5
+recv	ack	#769,	sack	#782
+send	data	#783,	winSize = 5
+recv	ack	#769,	sack	#783
+send	data	#784,	winSize = 5
+recv	ack	#769,	sack	#784
+send	data	#785,	winSize = 5
+recv	ack	#769,	sack	#785
+send	data	#786,	winSize = 5
+recv	ack	#769,	sack	#786
+send	data	#787,	winSize = 5
+recv	ack	#769,	sack	#787
+send	data	#788,	winSize = 5
+recv	ack	#769,	sack	#788
+send	data	#789,	winSize = 5
+recv	ack	#769,	sack	#789
+send	data	#790,	winSize = 5
+recv	ack	#769,	sack	#790
+send	data	#791,	winSize = 5
+recv	ack	#769,	sack	#791
+send	data	#792,	winSize = 5
+recv	ack	#769,	sack	#792
+send	data	#793,	winSize = 5
+recv	ack	#769,	sack	#769
+time	out,	threshold = 2,	winSize = 1
+resnd	data	#770,	winSize = 1
+recv	ack	#770,	sack	#770
+resnd	data	#771,	winSize = 2
+resnd	data	#772,	winSize = 2
+recv	ack	#771,	sack	#771
+resnd	data	#779,	winSize = 2
+recv	ack	#778,	sack	#772
+resnd	data	#793,	winSize = 3
+send	data	#794,	winSize = 3
+recv	ack	#792,	sack	#779
+send	data	#795,	winSize = 3
+recv	ack	#792,	sack	#792
+recv	ack	#792,	sack	#794
+send	data	#796,	winSize = 3
+recv	ack	#792,	sack	#795
+send	data	#797,	winSize = 3
+resnd	data	#793,	winSize = 3
+recv	ack	#792,	sack	#792
+recv	ack	#792,	sack	#797
+send	data	#798,	winSize = 3
+recv	ack	#795,	sack	#793
+send	data	#799,	winSize = 3
+recv	ack	#795,	sack	#798
+send	data	#800,	winSize = 3
+recv	ack	#795,	sack	#799
+send	data	#801,	winSize = 3
+recv	ack	#795,	sack	#800
+send	data	#802,	winSize = 3
+resnd	data	#796,	winSize = 3
+recv	ack	#795,	sack	#801
+send	data	#803,	winSize = 3
+recv	ack	#795,	sack	#802
+send	data	#804,	winSize = 3
+recv	ack	#802,	sack	#796
+send	data	#805,	winSize = 4
+send	data	#806,	winSize = 4
+recv	ack	#803,	sack	#803
+send	data	#807,	winSize = 4
+recv	ack	#804,	sack	#804
+send	data	#808,	winSize = 4
+recv	ack	#805,	sack	#805
+send	data	#809,	winSize = 4
+recv	ack	#806,	sack	#806
+send	data	#810,	winSize = 5
+send	data	#811,	winSize = 5
+recv	ack	#807,	sack	#807
+send	data	#812,	winSize = 5
+recv	ack	#808,	sack	#808
+send	data	#813,	winSize = 5
+recv	ack	#809,	sack	#809
+send	data	#814,	winSize = 5
+recv	ack	#810,	sack	#810
+send	data	#815,	winSize = 5
+recv	ack	#811,	sack	#811
+send	data	#816,	winSize = 6
+send	data	#817,	winSize = 6
+recv	ack	#812,	sack	#812
+send	data	#818,	winSize = 6
+recv	ack	#813,	sack	#813
+send	data	#819,	winSize = 6
+recv	ack	#814,	sack	#814
+send	data	#820,	winSize = 6
+recv	ack	#815,	sack	#815
+send	data	#821,	winSize = 6
+recv	ack	#816,	sack	#816
+send	data	#822,	winSize = 6
+recv	ack	#816,	sack	#816
+recv	ack	#816,	sack	#818
+send	data	#823,	winSize = 6
+recv	ack	#816,	sack	#819
+send	data	#824,	winSize = 6
+resnd	data	#817,	winSize = 6
+recv	ack	#816,	sack	#820
+send	data	#825,	winSize = 6
+recv	ack	#816,	sack	#821
+send	data	#826,	winSize = 6
+recv	ack	#816,	sack	#822
+send	data	#827,	winSize = 6
+recv	ack	#816,	sack	#823
+send	data	#828,	winSize = 6
+recv	ack	#816,	sack	#824
+send	data	#829,	winSize = 6
+recv	ack	#824,	sack	#817
+send	data	#830,	winSize = 7
+send	data	#831,	winSize = 7
+recv	ack	#825,	sack	#825
+send	data	#832,	winSize = 7
+recv	ack	#826,	sack	#826
+send	data	#833,	winSize = 7
+recv	ack	#826,	sack	#826
+recv	ack	#826,	sack	#828
+send	data	#834,	winSize = 7
+recv	ack	#826,	sack	#829
+send	data	#835,	winSize = 7
+resnd	data	#827,	winSize = 7
+recv	ack	#826,	sack	#831
+send	data	#836,	winSize = 7
+recv	ack	#826,	sack	#832
+send	data	#837,	winSize = 7
+recv	ack	#826,	sack	#833
+send	data	#838,	winSize = 7
+recv	ack	#826,	sack	#834
+send	data	#839,	winSize = 7
+recv	ack	#826,	sack	#835
+send	data	#840,	winSize = 7
+recv	ack	#829,	sack	#827
+send	data	#841,	winSize = 7
+recv	ack	#829,	sack	#836
+send	data	#842,	winSize = 7
+recv	ack	#829,	sack	#837
+send	data	#843,	winSize = 7
+recv	ack	#829,	sack	#838
+send	data	#844,	winSize = 7
+resnd	data	#830,	winSize = 7
+recv	ack	#829,	sack	#839
+send	data	#845,	winSize = 7
+recv	ack	#829,	sack	#840
+send	data	#846,	winSize = 7
+recv	ack	#829,	sack	#841
+send	data	#847,	winSize = 7
+recv	ack	#829,	sack	#842
+send	data	#848,	winSize = 7
+recv	ack	#829,	sack	#843
+send	data	#849,	winSize = 7
+recv	ack	#829,	sack	#844
+send	data	#850,	winSize = 7
+recv	ack	#844,	sack	#830
+send	data	#851,	winSize = 7
+recv	ack	#845,	sack	#845
+send	data	#852,	winSize = 7
+recv	ack	#846,	sack	#846
+send	data	#853,	winSize = 7
+recv	ack	#847,	sack	#847
+send	data	#854,	winSize = 8
+send	data	#855,	winSize = 8
+recv	ack	#848,	sack	#848
+send	data	#856,	winSize = 8
+recv	ack	#849,	sack	#849
+send	data	#857,	winSize = 8
+recv	ack	#850,	sack	#850
+send	data	#858,	winSize = 8
+recv	ack	#851,	sack	#851
+send	data	#859,	winSize = 8
+recv	ack	#852,	sack	#852
+send	data	#860,	winSize = 8
+recv	ack	#853,	sack	#853
+send	data	#861,	winSize = 8
+recv	ack	#854,	sack	#854
+send	data	#862,	winSize = 8
+recv	ack	#855,	sack	#855
+send	data	#863,	winSize = 9
+send	data	#864,	winSize = 9
+recv	ack	#856,	sack	#856
+send	data	#865,	winSize = 9
+recv	ack	#857,	sack	#857
+send	data	#866,	winSize = 9
+recv	ack	#857,	sack	#859
+send	data	#867,	winSize = 9
+recv	ack	#857,	sack	#860
+send	data	#868,	winSize = 9
+recv	ack	#857,	sack	#861
+send	data	#869,	winSize = 9
+resnd	data	#858,	winSize = 9
+recv	ack	#857,	sack	#862
+send	data	#870,	winSize = 9
+recv	ack	#857,	sack	#863
+send	data	#871,	winSize = 9
+recv	ack	#857,	sack	#864
+send	data	#872,	winSize = 9
+recv	ack	#857,	sack	#865
+send	data	#873,	winSize = 9
+recv	ack	#857,	sack	#866
+send	data	#874,	winSize = 9
+recv	ack	#857,	sack	#867
+send	data	#875,	winSize = 9
+recv	ack	#857,	sack	#857
+recv	ack	#857,	sack	#869
+send	data	#876,	winSize = 9
+recv	ack	#867,	sack	#858
+send	data	#877,	winSize = 9
+recv	ack	#867,	sack	#867
+recv	ack	#867,	sack	#871
+send	data	#878,	winSize = 9
+recv	ack	#867,	sack	#872
+send	data	#879,	winSize = 9
+resnd	data	#868,	winSize = 9
+recv	ack	#867,	sack	#873
+send	data	#880,	winSize = 9
+recv	ack	#867,	sack	#867
+recv	ack	#867,	sack	#875
+send	data	#881,	winSize = 9
+recv	ack	#867,	sack	#876
+send	data	#882,	winSize = 9
+recv	ack	#867,	sack	#877
+send	data	#883,	winSize = 9
+recv	ack	#867,	sack	#878
+send	data	#884,	winSize = 9
+recv	ack	#867,	sack	#879
+send	data	#885,	winSize = 9
+recv	ack	#869,	sack	#868
+send	data	#886,	winSize = 9
+recv	ack	#869,	sack	#880
+send	data	#887,	winSize = 9
+recv	ack	#869,	sack	#881
+send	data	#888,	winSize = 9
+recv	ack	#869,	sack	#882
+send	data	#889,	winSize = 9
+resnd	data	#870,	winSize = 9
+recv	ack	#869,	sack	#883
+send	data	#890,	winSize = 9
+recv	ack	#869,	sack	#884
+send	data	#891,	winSize = 9
+recv	ack	#869,	sack	#885
+send	data	#892,	winSize = 9
+recv	ack	#869,	sack	#886
+send	data	#893,	winSize = 9
+recv	ack	#869,	sack	#887
+send	data	#894,	winSize = 9
+recv	ack	#869,	sack	#888
+send	data	#895,	winSize = 9
+recv	ack	#869,	sack	#869
+recv	ack	#873,	sack	#870
+send	data	#896,	winSize = 9
+recv	ack	#873,	sack	#890
+send	data	#897,	winSize = 9
+recv	ack	#873,	sack	#891
+send	data	#898,	winSize = 9
+recv	ack	#873,	sack	#892
+send	data	#899,	winSize = 9
+resnd	data	#874,	winSize = 9
+recv	ack	#873,	sack	#893
+send	data	#900,	winSize = 9
+recv	ack	#873,	sack	#873
+recv	ack	#873,	sack	#895
+send	data	#901,	winSize = 9
+recv	ack	#873,	sack	#896
+send	data	#902,	winSize = 9
+recv	ack	#873,	sack	#897
+send	data	#903,	winSize = 9
+recv	ack	#873,	sack	#899
+send	data	#904,	winSize = 9
+recv	ack	#888,	sack	#874
+send	data	#905,	winSize = 9
+recv	ack	#888,	sack	#900
+send	data	#906,	winSize = 9
+recv	ack	#888,	sack	#901
+send	data	#907,	winSize = 9
+recv	ack	#888,	sack	#902
+send	data	#908,	winSize = 9
+resnd	data	#889,	winSize = 9
+recv	ack	#888,	sack	#903
+send	data	#909,	winSize = 9
+recv	ack	#888,	sack	#904
+send	data	#910,	winSize = 9
+recv	ack	#888,	sack	#905
+send	data	#911,	winSize = 9
+recv	ack	#888,	sack	#906
+send	data	#912,	winSize = 9
+recv	ack	#888,	sack	#907
+send	data	#913,	winSize = 9
+recv	ack	#888,	sack	#908
+send	data	#914,	winSize = 9
+recv	ack	#893,	sack	#889
+send	data	#915,	winSize = 9
+recv	ack	#893,	sack	#909
+send	data	#916,	winSize = 9
+recv	ack	#893,	sack	#910
+send	data	#917,	winSize = 9
+recv	ack	#893,	sack	#911
+send	data	#918,	winSize = 9
+resnd	data	#894,	winSize = 9
+recv	ack	#893,	sack	#893
+recv	ack	#893,	sack	#913
+send	data	#919,	winSize = 9
+recv	ack	#893,	sack	#914
+send	data	#920,	winSize = 9
+recv	ack	#893,	sack	#915
+send	data	#921,	winSize = 9
+recv	ack	#893,	sack	#916
+send	data	#922,	winSize = 9
+recv	ack	#893,	sack	#917
+send	data	#923,	winSize = 9
+recv	ack	#893,	sack	#918
+send	data	#924,	winSize = 9
+recv	ack	#897,	sack	#894
+send	data	#925,	winSize = 9
+recv	ack	#897,	sack	#919
+send	data	#926,	winSize = 9
+recv	ack	#897,	sack	#920
+send	data	#927,	winSize = 9
+recv	ack	#897,	sack	#897
+resnd	data	#898,	winSize = 9
+recv	ack	#897,	sack	#923
+send	data	#928,	winSize = 9
+recv	ack	#897,	sack	#924
+send	data	#929,	winSize = 9
+recv	ack	#897,	sack	#925
+send	data	#930,	winSize = 9
+recv	ack	#897,	sack	#926
+send	data	#931,	winSize = 9
+recv	ack	#897,	sack	#927
+send	data	#932,	winSize = 9
+recv	ack	#911,	sack	#898
+send	data	#933,	winSize = 10
+send	data	#934,	winSize = 10
+recv	ack	#911,	sack	#928
+send	data	#935,	winSize = 10
+recv	ack	#911,	sack	#929
+send	data	#936,	winSize = 10
+recv	ack	#911,	sack	#930
+send	data	#937,	winSize = 10
+resnd	data	#912,	winSize = 10
+recv	ack	#911,	sack	#931
+send	data	#938,	winSize = 10
+recv	ack	#911,	sack	#932
+send	data	#939,	winSize = 10
+recv	ack	#911,	sack	#933
+send	data	#940,	winSize = 10
+recv	ack	#911,	sack	#934
+send	data	#941,	winSize = 10
+recv	ack	#911,	sack	#935
+send	data	#942,	winSize = 10
+recv	ack	#911,	sack	#936
+send	data	#943,	winSize = 10
+recv	ack	#911,	sack	#937
+send	data	#944,	winSize = 10
+recv	ack	#920,	sack	#912
+send	data	#945,	winSize = 10
+recv	ack	#920,	sack	#938
+send	data	#946,	winSize = 10
+recv	ack	#920,	sack	#939
+send	data	#947,	winSize = 10
+recv	ack	#920,	sack	#940
+send	data	#948,	winSize = 10
+resnd	data	#921,	winSize = 10
+recv	ack	#920,	sack	#941
+send	data	#949,	winSize = 10
+recv	ack	#920,	sack	#942
+send	data	#950,	winSize = 10
+recv	ack	#920,	sack	#943
+send	data	#951,	winSize = 10
+recv	ack	#920,	sack	#944
+send	data	#952,	winSize = 10
+recv	ack	#920,	sack	#945
+send	data	#953,	winSize = 10
+recv	ack	#920,	sack	#946
+send	data	#954,	winSize = 10
+recv	ack	#920,	sack	#947
+send	data	#955,	winSize = 10
+recv	ack	#920,	sack	#920
+recv	ack	#921,	sack	#921
+send	data	#956,	winSize = 10
+recv	ack	#921,	sack	#949
+send	data	#957,	winSize = 10
+recv	ack	#921,	sack	#950
+send	data	#958,	winSize = 10
+recv	ack	#921,	sack	#951
+send	data	#959,	winSize = 10
+resnd	data	#922,	winSize = 10
+recv	ack	#921,	sack	#952
+send	data	#960,	winSize = 10
+recv	ack	#921,	sack	#953
+send	data	#961,	winSize = 10
+recv	ack	#921,	sack	#954
+send	data	#962,	winSize = 10
+recv	ack	#921,	sack	#955
+send	data	#963,	winSize = 10
+recv	ack	#921,	sack	#956
+send	data	#964,	winSize = 10
+recv	ack	#921,	sack	#957
+send	data	#965,	winSize = 10
+recv	ack	#921,	sack	#958
+send	data	#966,	winSize = 10
+recv	ack	#921,	sack	#959
+send	data	#967,	winSize = 10
+recv	ack	#947,	sack	#922
+send	data	#968,	winSize = 10
+recv	ack	#947,	sack	#960
+send	data	#969,	winSize = 10
+recv	ack	#947,	sack	#961
+send	data	#970,	winSize = 10
+recv	ack	#947,	sack	#962
+send	data	#971,	winSize = 10
+resnd	data	#948,	winSize = 10
+recv	ack	#947,	sack	#963
+send	data	#972,	winSize = 10
+recv	ack	#947,	sack	#947
+recv	ack	#947,	sack	#965
+send	data	#973,	winSize = 10
+recv	ack	#947,	sack	#967
+send	data	#974,	winSize = 10
+recv	ack	#947,	sack	#968
+send	data	#975,	winSize = 10
+recv	ack	#947,	sack	#969
+send	data	#976,	winSize = 10
+recv	ack	#947,	sack	#970
+send	data	#977,	winSize = 10
+recv	ack	#947,	sack	#971
+send	data	#978,	winSize = 10
+recv	ack	#963,	sack	#948
+send	data	#979,	winSize = 10
+recv	ack	#963,	sack	#972
+send	data	#980,	winSize = 10
+recv	ack	#963,	sack	#973
+send	data	#981,	winSize = 10
+recv	ack	#963,	sack	#974
+send	data	#982,	winSize = 10
+resnd	data	#964,	winSize = 10
+recv	ack	#963,	sack	#975
+send	data	#983,	winSize = 10
+recv	ack	#963,	sack	#976
+send	data	#984,	winSize = 10
+recv	ack	#963,	sack	#977
+send	data	#985,	winSize = 10
+recv	ack	#963,	sack	#978
+send	data	#986,	winSize = 10
+recv	ack	#963,	sack	#979
+send	data	#987,	winSize = 10
+recv	ack	#963,	sack	#980
+send	data	#988,	winSize = 10
+recv	ack	#963,	sack	#981
+send	data	#989,	winSize = 10
+recv	ack	#963,	sack	#982
+send	data	#990,	winSize = 10
+recv	ack	#965,	sack	#964
+send	data	#991,	winSize = 10
+recv	ack	#965,	sack	#983
+send	data	#992,	winSize = 10
+recv	ack	#965,	sack	#985
+send	data	#993,	winSize = 10
+recv	ack	#965,	sack	#986
+send	data	#994,	winSize = 10
+resnd	data	#966,	winSize = 10
+recv	ack	#965,	sack	#987
+send	data	#995,	winSize = 10
+recv	ack	#965,	sack	#965
+recv	ack	#965,	sack	#989
+send	data	#996,	winSize = 10
+recv	ack	#965,	sack	#990
+send	data	#997,	winSize = 10
+recv	ack	#965,	sack	#991
+send	data	#998,	winSize = 10
+recv	ack	#965,	sack	#965
+recv	ack	#965,	sack	#993
+send	data	#999,	winSize = 10
+recv	ack	#965,	sack	#994
+send	data	#1000,	winSize = 10
+recv	ack	#983,	sack	#966
+send	data	#1001,	winSize = 10
+recv	ack	#983,	sack	#995
+send	data	#1002,	winSize = 10
+recv	ack	#983,	sack	#996
+send	data	#1003,	winSize = 10
+recv	ack	#983,	sack	#997
+send	data	#1004,	winSize = 10
+resnd	data	#984,	winSize = 10
+recv	ack	#983,	sack	#998
+send	data	#1005,	winSize = 10
+recv	ack	#983,	sack	#999
+send	data	#1006,	winSize = 10
+recv	ack	#983,	sack	#1000
+send	data	#1007,	winSize = 10
+recv	ack	#983,	sack	#1001
+send	data	#1008,	winSize = 10
+recv	ack	#983,	sack	#983
+recv	ack	#983,	sack	#1003
+send	data	#1009,	winSize = 10
+recv	ack	#983,	sack	#1004
+send	data	#1010,	winSize = 10
+recv	ack	#987,	sack	#984
+send	data	#1011,	winSize = 10
+recv	ack	#987,	sack	#1005
+send	data	#1012,	winSize = 10
+recv	ack	#987,	sack	#1006
+send	data	#1013,	winSize = 10
+recv	ack	#987,	sack	#1007
+send	data	#1014,	winSize = 10
+resnd	data	#988,	winSize = 10
+recv	ack	#987,	sack	#1008
+send	data	#1015,	winSize = 10
+recv	ack	#987,	sack	#1009
+send	data	#1016,	winSize = 10
+recv	ack	#987,	sack	#1010
+send	data	#1017,	winSize = 10
+recv	ack	#987,	sack	#1011
+send	data	#1018,	winSize = 10
+recv	ack	#987,	sack	#1012
+send	data	#1019,	winSize = 10
+recv	ack	#987,	sack	#987
+recv	ack	#991,	sack	#988
+send	data	#1020,	winSize = 10
+recv	ack	#991,	sack	#1015
+send	data	#1021,	winSize = 10
+recv	ack	#991,	sack	#1016
+send	data	#1022,	winSize = 10
+recv	ack	#991,	sack	#1017
+send	data	#1023,	winSize = 10
+resnd	data	#992,	winSize = 10
+recv	ack	#991,	sack	#1018
+send	data	#1024,	winSize = 10
+recv	ack	#991,	sack	#1019
+recv	ack	#991,	sack	#1020
+recv	ack	#991,	sack	#1021
+recv	ack	#991,	sack	#1022
+recv	ack	#991,	sack	#1023
+recv	ack	#1001,	sack	#992
+recv	ack	#1001,	sack	#1024
+time	out,	threshold = 5,	winSize = 1
+resnd	data	#1002,	winSize = 1
+recv	ack	#1001,	sack	#1001
+time	out,	threshold = 1,	winSize = 1
+resnd	data	#1002,	winSize = 1
+recv	ack	#1001,	sack	#1001
+time	out,	threshold = 1,	winSize = 1
+resnd	data	#1002,	winSize = 1
+recv	ack	#1012,	sack	#1002
+resnd	data	#1013,	winSize = 2
+resnd	data	#1014,	winSize = 2
+recv	ack	#1013,	sack	#1013
+recv	ack	#1024,	sack	#1014
+send	fin
+recv	finack
